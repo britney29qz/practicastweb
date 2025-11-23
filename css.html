@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+</head>
+<body>
+    <header>
+        <h1>Introducción a los lenguajes del desarrollo web: HTML, CSS y JavaScript</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="aplicaciones.html">Aplicaciones prácticas</a></li>
+                <li><a href="formulario.html">Formulario de suscripción</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <h2>CSS: Diseño, estilo y presentación</h2>
+    <section>
+        <h3>Índice de contenido</h3>
+        <ol>
+            <li><a href="#intro">Introducción</a></li>
+            <li><a href="#uno">Propiedades comunes</a></li>
+            <li><a href="#dos">Ejemplo visual</a></li>
+        </ol>
+    </section>
+    <section>
+        <article id="intro">
+            <h3>Introducción</h3>
+            <p>
+                CSS es un lenguaje que se centra en el diseño y la presentación de una página web; permite alterar la apariencia de los elementos 
+                HTML y controlar aspectos como el color, los márgenes, el tipo de letra, el diseño y otros aspectos visuales que son clave para la 
+                experiencia del usuario dentro del sitio web.
+            </p>
+            <p>
+                Como te permite separar la presentación del contenido, puedes mantener un diseño coherente en todo tu sitio web de manera más sencilla,
+                creando diseños atractivos y gestioinando los cambios visuales rápidamente.
+            </p>
+            <img src="img/css-image-styling-1024x512.jpg" alt="Imágen de CSS" width="30%">
+        </article>
+        <article id="uno">
+            <h3>Propiedades comunes</h3>
+            <p>
+               Empecemos por observar la sintaxis de selector: 
+            </p>
+            <img src="img/Sintaxis-CSS-Selector-propiedad.png" alt="Sintaxis de CSS" width="30%">
+            <p>
+                En la siguiente tabla, se muestran los selectores básicos con su respectiva descripción. Ten en cuenta los caracteres especiales que usan algunos.
+            </p>
+            <table border="1">
+                <caption><b>Selectores básicos</b></caption>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>*</td>
+                        <td>Selecciona todos los elementos del DOM</td>
+                    </tr>
+                    <tr>
+                        <td>etiqueta</td>
+                        <td>Selecciona todas las etiquetas indicadas</td>
+                    </tr>
+                    <tr>
+                        <td>.class</td>
+                        <td>Selección de los elementos con las clase .class</td>
+                    </tr>
+                    <tr>
+                        <td>#id</td>
+                        <td>Selección del elemento con id #id</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <p>
+                Así mismo, en la siguiente tabla se muestran algunas unidades de medida, importantes al momento de considerar el tamaño y las dimensiones de los elementos.
+            </p>
+            <table border="1">
+                <caption><b>Unidades de medida</b></caption>
+                <thead>
+                    <tr>
+                        <th>Medida</th>
+                        <th>Longitudes relativas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>px</td>
+                        <td>Píxeles (relativo al dispositivo)</td>
+                    </tr>
+                    <tr>
+                        <td>em</td>
+                        <td>2em siginifica 2 veces el tamaño de la fuente actual</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>Porcentaje (relativo al elemento padre)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <p>
+                También, te mostramos las propiedades de colores y fondos, muy importantes para darle ese toque personalizado a tu sitio web.
+            </p>
+            <table border="1">
+                <caption><b>Color y fondo</b></caption>
+                <thead>
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Descripción</th>
+                        <th>Valores</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>color</td>
+                        <td>Color del texto</td>
+                        <td>RGB | HSL | HEX | nombre del color | RGBA | HSLA</td>
+                    </tr>
+                    <tr>
+                        <td>background-color</td>
+                        <td>Color de fondo</td>
+                        <td>RGB | HSL | HEX | nombre del color | RGBA</td>
+                    </tr>
+                    <tr>
+                        <td>background-image</td>
+                        <td>Imagen de fondo</td>
+                        <td>url(...) | none</td>
+                    </tr>
+                    <tr>
+                        <td>background-size</td>
+                        <td>Tamaño de la imagen de fondo</td>
+                        <td>auto | cover | contain | valor</td>
+                    </tr>
+                    <tr>
+                        <td>background-position</td>
+                        <td>Posición de la imagen de fondo</td>
+                        <td>percentage | length | left | center | right</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <p>
+                De igual manera, en las dos tablas siguientes, te presentamos ciertas propiedades relacionadas con el texto y las fuentes, que te ayudarán a mejorar la legibilidad y el estilo de tu contenido.
+            </p>
+            <table border="1">
+                <caption><b>Texto</b></caption>
+                <thead>
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Descripción</th>
+                        <th>Valores</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>text-indent</td>
+                        <td>Desplazamiento de la primera línea del texto</td>
+                        <td>longitud | porcentaje</td>
+                    </tr>
+                    <tr>
+                        <td>text-align</td>
+                        <td>Alineamiento del texto</td>
+                        <td>left | right | center | justify</td>
+                    </tr>
+                    <tr>
+                        <td>text-decoration</td>
+                        <td>Efectos de subrayado y tachado</td>
+                        <td>none | underline | overline | line-through</td>
+                    </tr>
+                    <tr>
+                        <td>text-transform</td>
+                        <td>Transformación a mayúsculas/minúsculas</td>
+                        <td>capitalize | uppercase | lowercase | none</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <table border="1">
+                <caption><b>Fuentes</b></caption>
+                <thead>
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Descripción</th>
+                        <th>Valores</th>
+                    </tr>   
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>font-family</td>
+                        <td>Familia de fuentes</td>
+                        <td>nombre-familia | nombre-familia-genérica | *</td>
+                    </tr>
+                    <tr>
+                        <td>font-weight</td>
+                        <td>Anchura de los caracteres. Normal = 400, Negrita = 700</td>
+                        <td>normal | bold | bolder | lighter | 100 | 200 | 300 | 400</td>
+                    </tr>
+                    <tr>
+                        <td>font-size</td>
+                        <td>Tamaño de la fuente</td>
+                        <td>xx-small | x-small | small | medium | large | x-large | xx-large</td>
+                </tbody>
+            </table>
+        </article>
+        <br>
+        <article id="dos">
+            <h3>Ejemplo visual</h3>
+            <p>
+                A continuación, te compartimos un ejemplo sencillo de CSS, usando algunas de las propiedades que hemos mencionado en esta sección.
+            </p>
+            <img src="img/internoCSS.png" alt="Ejemplo de código CSS" width="30%">
+            <p>Te invitamos a continuar con el estudio de estos lenguajes esenciales para el desarrollo web, explorando las secciones dedicadas a HTML y JavaScript.</p>
+            <a href="html.html">HTML: Estructura y contenido</a><br>
+            <a href="javascript.html">JavaScript: Interactividad y dinamismo</a><br>
+        </article>
+    </section>
+    <br>
+    <br>
+    <hr>
+    <footer>
+        <p>&copy; 2025 Britney's Blog</p>
+    </footer>
+</body>
+</html>
