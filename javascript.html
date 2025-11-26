@@ -7,53 +7,52 @@
 </head>
 <body>
     <header>
-        <h1>Introducción a los lenguajes del desarrollo web: HTML, CSS y JavaScript</h1>
+        <img src="img/4.-Dise§o-y-Desarrollo-Web.png" alt="Logo de desarrollo web" width="5%">
+        <span>Introducción a los lenguajes del desarrollo web</span>
+    </header>
+    <section>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="html.html">HTML</a></li>
                 <li><a href="css.html">CSS</a></li>
                 <li><a href="javascript.html">JavaScript</a></li>
-                <li><a href="aplicaciones.html">Aplicaciones prácticas</a></li>
                 <li><a href="formulario.html">Formulario de inscripción</a></li>
             </ul>
         </nav>
-    </header>
-    <hr>
-    <h2>JavaScript: Interactividad y dinamismo</h2>
-    <section>
-        <h3>Índice de contenido</h3>
-        <ol>
-            <li><a href="#intro">Introducción</a></li>
-            <li><a href="#uno">Fundamentos básicos</a></li>
-            <li><a href="#dos">Ejemplo visual</a></li>
-        </ol>
     </section>
+    <hr>    
     <div>
-        <article id="intro">
-            <h3>Introducción</h3>
+        <section>
+            <h1>JavaScript: Interactividad y dinamismo</h1>
             <p>
-                JavaScript se trata de un lenguaje de programación con el que puedes agregar interactividad y dinamismo a tu 
+                JavaScript se trata de un lenguaje de programación con el que puedes agregar <em>interactividad y dinamismo</em> a tu 
                 página web. Trabaja sobre el código que ya has escrito con HTML y CSS, por lo que se complementan en el desarrollo 
-                de tu proyecto. 
-            </p>
-            <p>
-                Agrega movimiento a las páginas web, además de permitir el procesamiento y transformación de los datos enviados y recibidos. 
-                Junto con la creación de contenidos que se actualizan de forma dinámica y animada, dando vida a las aplicaciones que antes 
-                solo estaban estructuradas estáticamente con HTML y CSS.
+                de tu proyecto. <br>
+                Siempre que observes un movimiento al interactuar con cierto elemento, un cuadro de alerta sonando, o un mecanismo de autocompletar 
+                en algún cammpo, ten en mente que JavaScript está detrás de todo eso, funcionando. <br>
+                Algo importante a tener en cuenta es que este lenguaje se puede utilizar tanto en el lado del cliente como en el lado del servidor, 
+                utilizando tecnologías necesarias para ello, como Node.js.
             </p>
             <img src="img/hero-javascript_480.png" alt="Imágen de JavaScript" width="400">
-        </article>
-        <article id="uno">
-            <h3>Fundamentos básicos</h3>
-            <h4>Variables</h4>
+            <h2>Ventajas</h2>
+            <p>
+                Ya tenemos la noción de las <b>ventajas</b> que brinda este lenguaje, recordemos que agrega movimiento a las páginas web, además de permitir el 
+                procesamiento y transformación de los datos enviados y recibidos. <br>
+                Junto con la creación de contenidos que se actualizan de forma dinámica y animada, dando vida a las aplicaciones que antes 
+                solo estaban estructuradas estáticamente con HTML y CSS. 
+                <br><br>
+                Quiero mostrarte algunos conceptos básicos e importantes para que te lleves un poquito más de conocimiento técnico. Con esto, te dará una idea de las enormes 
+                ventajas que tiene el uso de JavaScript en el desarrollo web.
+            </p>
+            <h3>Variables</h3>
             <p>
                 Las variables son contenedores en los que puedes almacenar valores. Primero se declara la variable con la palabra reservada 
                 <em>var</em> o <em>let</em>, seguida del nombre que se le vaya a dar. <br><br>
                 let nombreDeLaVariable = "Bob";<br><br>
                 Existen diferentes tipos de datos que puedes almacenar en las variables, como números, cadenas de texto, booleanos, arreglos y objetos.
             </p>
-            <h4>Operadores</h4>
+            <h3>Operadores</h3>
             <p>
                 Un operador es un símbolo matemático que puede actuar sobre dos valores o variable y producir un resultado. <br>
                 En la siguiente tabla, se muestran algunos de los operadores más comunes en JavaScript: <br>
@@ -62,10 +61,12 @@
                 <caption><b>Operadores comunes</b></caption>
                 <thead>
                     <tr>
-                        <td><b>Operador</b></td>
-                        <td><b>Descripción</b></td>
-                        <td><b>Ejemplo</b></td>
+                        <th>Operador</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td>Suma/concatenar (+)</td>
                         <td>Suma dos números o junta dos cadenas en una</td>
@@ -91,9 +92,9 @@
                         <td>Equivale al operador lógico NOT, cambia true por false y viceversa</td>
                         <td>let miVariable = 3;<br>miVariable !== 3;</td>
                     </tr>
-                </thead>
+                </tbody>
             </table>
-            <h4>Condicionales</h4>
+            <h3>Condicionales</h3>
             <p>
                 Los condicionales son estructuras de código que permiten comprobar si una expresión devuelve true o no, 
                 y luego ejecuta un código diferente dependiendo del resultado. <br>
@@ -106,7 +107,7 @@
                 }<br><br>
                 Si se cumple el if, se ejecuta el primer apartado, y si no se cumple la primera condición, se ejecuta el bloque dentro del else.
             </p>
-            <h4>Funciones</h4>
+            <h3>Funciones</h3>
             <p>
                 Las funciones son una manera de encapsular una funcionalidad que quieres reutilizar, de modo que puedes llamar 
                 esa función con un solo nombre. Por ejemplo: <br><br>
@@ -117,19 +118,20 @@
                 que las funciones toman con frecuencia <em>argumentos</em>, pedazos de datos que necesitan para hacer su trabajo; estos se colocan 
                 dentro de los paréntesis.
             </p>
-        </article>
-        <article id="dos">
-            <h3>Ejemplo visual</h3>
+            <h2>Aplicaciones</h2>
             <p>
-                A continuación, te mostramos un ejemplo sencillo de código JavaScript, que ayuda a entender la forma que tiene:
+                A continuación, te muestro un ejemplo sencillo de código JavaScript integrado en el HTML; te ayudará a entender la forma que tiene al complementarse. <br>
+                La verdad es que para este lenguaje sí debemos tomar en cuenta más detalles, pues ya es más complejo; pero descuida, que con una guía paso a paso, y la práctica, 
+                ¡todo se puede! <br> 
+                Recuerda probar el código en un editor que permita integrar los scripts de JavaScript. ¡Diviértete! 
             </p>
-            <img src="img/codigoSincronizar1.png" alt="Ejemplo de código JavaScript" width="400"> 
+            <img src="img/unnamed.png" alt="Ejemplo de código JavaScript" width="400"> 
             <p>
                 Te invitamos a continuar con el estudio de estos lenguajes esenciales para el desarrollo web, explorando las secciones dedicadas a HTML y CSS.
             </p>
             <a href="html.html">HTML: Estructura y contenido</a><br>
             <a href="css.html">CSS: Diseño, estilo y presentación</a>
-        </article>
+        </section>
     </div>
     <br>
     <br>

@@ -7,43 +7,47 @@
 </head>
 <body>
     <header>
-        <h1>Introducción a los lenguajes del desarrollo web: HTML, CSS y JavaScript</h1>
+        <img src="img/4.-Dise§o-y-Desarrollo-Web.png" alt="Logo de desarrollo web" width="5%">
+        <span>Introducción a los lenguajes del desarrollo web: HTML, CSS y JavaScript</span>
+    </header>
+    <section>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="html.html">HTML</a></li>
                 <li><a href="css.html">CSS</a></li>
                 <li><a href="javascript.html">JavaScript</a></li>
-                <li><a href="aplicaciones.html">Aplicaciones prácticas</a></li>
                 <li><a href="formulario.html">Formulario de inscripción</a></li>
             </ul>
         </nav>
-    </header>
+    </section>
     <hr>
-    <h2>Formulario de inscripción</h2>
-    <form>
-        <label for="nombre">Nombres:</label>
-        <input type="text" id="nombre" required>
-        <br><br>
+    <section>
+        <h1>Formulario de inscripción nuestros cursos</h1>
+        <form action="registro.html" method="post">
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre" required>
+            <br><br>
 
-        <label for="apellido">Apellidos:</label>
-        <input type="text" id="apellido" required>
-        <br><br>
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" required>
+            <br><br>
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" required>
-        <br><br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" required>
+            <br><br>
 
-        <label for="curso">Curso de interés:</label><br>
-        <select id="curso" required>
-            <option value="" disabled selected>Seleccione una opción</option>
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="javascript">JavaScript</option>
-        </select><br><br>
+            <label for="curso">Curso de interés:</label><br>
+            <select id="curso" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select><br><br>
 
-        <button type="submit">Enviar</button>
-    </form>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
     <br>
     <br>
     <hr>
