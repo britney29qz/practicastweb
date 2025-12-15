@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
+    <header class="encabezado">
         <img src="img/logopagina.png" alt="Logo de desarrollo web" width="50">
         <span>Introducción a los lenguajes del desarrollo web: HTML, CSS y JavaScript</span>
     </header>
-    <nav>
+    <nav class="menu">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="html.html">HTML</a></li>
@@ -20,8 +21,9 @@
         </ul>
     </nav>
     <hr>
-    <h1>Formulario de inscripción nuestros cursos</h1>
-    <form action="registro.html" method="post">
+    <main class="contenedor">
+        <h1>Formulario de inscripción nuestros cursos</h1>
+        <form action="registro.html" method="post" class="formulario">
         <label for="nombre">Nombres:</label>
         <input type="text" id="nombre" required>
         <br><br>
@@ -44,10 +46,12 @@
 
         <button type="submit">Enviar</button>
     </form>
+    </main>
+    
     <br>
     <br>
     <hr>
-    <footer>
+    <footer class="piepagina">
         <p>&copy; 2025 Britney's Blog</p>
     </footer>
 </body>

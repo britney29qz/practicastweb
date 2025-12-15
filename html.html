@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
+    <header class="encabezado">
         <img src="img/logopagina.png" alt="Logo de desarrollo web" width="50">
         <span>Introducción a los lenguajes del desarrollo web</span>
     </header>
-    <nav>
+    <nav class="menu">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="html.html">HTML</a></li>
@@ -20,9 +21,9 @@
         </ul>
     </nav>
     <hr>    
-    <div>  
+    <div class="contenedor">  
         <h1>HTML: Estructura y contenido</h1>
-        <section>
+        <section class="contenido">
             <h2>Introducción</h2>
             <p>
                 El lenguaje HTML es el encargado de la estructura y el contenido básico de una página web. 
@@ -54,17 +55,18 @@
                 de confianza para ir obervando cómo se van generando los diferentes elementos en la página web. ¡Es muy divertido!
             </p>
             <img src="img/ejemplohtml.png" alt="Ejemplo de código HTML" width="400">
-            <p>
-                Te invito a continuar con el estudio de estos lenguajes esenciales para el desarrollo web, explorando las secciones dedicadas a CSS y JavaScript. <br>
-            </p>
-            <a href="css.html">CSS: Diseño, estilo y presentación</a><br>
-            <a href="javascript.html">JavaScript: Interactividad y dinamismo</a>
         </section>
+        <aside class="lateral">
+            <p>Para la revisión específica, te invito a explorar las secciones dedicadas a cada uno de estos lenguajes esenciales:</p>
+            <a href="html.html">HTML: Estructura y contenido</a><br>
+            <a href="css.html">CSS: Diseño, estilo y presentación</a><br>
+            <a href="javascript.html">JavaScript: Interactividad y dinamismo</a><br>
+        </aside>
     </div> 
     <br>
     <br>
     <hr> 
-    <footer>
+    <footer class="piepagina">
         <p>&copy; 2025 Britney's Blog</p>
     </footer>
 </body>

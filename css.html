@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
+    <header class="encabezado">
         <img src="img/logopagina.png" alt="Logo de desarrollo web" width="50">
         <span>Introducción a los lenguajes del desarrollo web</span>
     </header>
-    <nav>
+    <nav class="menu">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="html.html">HTML</a></li>
@@ -20,9 +21,9 @@
         </ul>
     </nav>
     <hr>    
-    <div>
+    <div class="contenedor">
         <h1>CSS: Diseño, estilo y presentación</h1>
-        <section>
+        <section class="contenido">
             <h2>Introducción</h2>
             <p>
                 CSS es un lenguaje que se centra en el diseño y la presentación de una página web; permite alterar la <em>apariencia</em> de los elementos 
@@ -47,7 +48,7 @@
             <p>
                 En la siguiente tabla, se muestran los selectores básicos con su respectiva descripción. Ten en cuenta los caracteres especiales que usan algunos.
             </p>
-            <table border="1">
+            <table border="1" class="tablas">
                 <caption><b>Selectores básicos</b></caption>
                 <thead>
                     <tr>
@@ -79,7 +80,7 @@
             <p>
                 También, te mostramos las propiedades de colores y fondos; muy importantes para darle ese toque personalizado a tu sitio web.
             </p>
-            <table border="1">
+            <table border="1" class="tablas">
                 <caption><b>Color y fondo</b></caption>
                 <thead>
                     <tr>
@@ -121,7 +122,7 @@
             <p>
                 De igual manera, en las dos tablas siguientes, te presentamos ciertas propiedades relacionadas con el texto y las fuentes, que te ayudarán a mejorar la legibilidad y el estilo de tu contenido.
             </p>
-            <table border="1">
+            <table border="1" class="tablas">
                 <caption><b>Texto</b></caption>
                 <thead>
                     <tr>
@@ -154,7 +155,7 @@
                 </tbody>
             </table>
             <br>
-            <table border="1">
+            <table border="1" class="tablas">
                 <caption><b>Fuentes</b></caption>
                 <thead>
                     <tr>
@@ -186,15 +187,18 @@
                 Puedes probar este código en tu editor de confianza para que observes los cambios visuales que se generan. ¡Fascinante!
             </p>
             <img src="img/ejemplocss.png" alt="Ejemplo de código CSS" width="400">
-            <p>Te invitamos a continuar con el estudio de estos lenguajes esenciales para el desarrollo web, explorando las secciones dedicadas a HTML y JavaScript.</p>
-            <a href="html.html">HTML: Estructura y contenido</a><br>
-            <a href="javascript.html">JavaScript: Interactividad y dinamismo</a><br>
         </section>
+        <aside class="lateral">
+            <p>Para la revisión específica, te invito a explorar las secciones dedicadas a cada uno de estos lenguajes esenciales:</p>
+            <a href="html.html">HTML: Estructura y contenido</a><br>
+            <a href="css.html">CSS: Diseño, estilo y presentación</a><br>
+            <a href="javascript.html">JavaScript: Interactividad y dinamismo</a><br>
+        </aside>
     </div>
     <br>
     <br>
     <hr>
-    <footer>
+    <footer class="piepagina">
         <p>&copy; 2025 Britney's Blog</p>
     </footer>
 </body>
