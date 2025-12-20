@@ -8,45 +8,63 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f2f2f2;
     color: #333;
     line-height: 1.6;
 }
 
 .encabezado {
-    background-color: #333e50;
-    color: #f1debd;
+    background-color: #213635;
+    color: #f2f2f2;
     padding: 15px;
     text-align: center;
     font-size: 2em;
 }
 
 .menu {
-    background-color: #5c6e6e;
+    background-color: #1c5052;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
     padding: 1rem;
 }
 
 .menu ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
 }
 .menu a {
-    color: #f1debd;
+    color: #f2f2f2;
     text-decoration: none;
-    font-weight: bold;
 }
 .menu a:hover {
     text-decoration: underline;
+    font-weight: bold;
 }
+
+.lateral a {
+    color: #348E91;
+    text-decoration: none;
+}
+.lateral a:hover {
+    color: #1c5052;
+    text-decoration: underline;
+}
+.articulo a {
+    color: #348E91;
+    text-decoration: none;
+}
+.articulo a:hover {
+    color: #1c5052;
+    text-decoration: underline;
+}
+
 
 .contenedor {
     display: flex;
     gap: 2rem;
-    padding: 3rem;
+    padding: 5rem;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -59,7 +77,7 @@ body {
 
 .lateral {
     flex: 1;
-    padding: 5rem;
+    padding-top: 7rem;
 }
 
 .articulo {
@@ -72,18 +90,96 @@ body {
 
 }
 
-.formulario {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding: 5rem;
+img {
+    border-radius: 20px;
+    
 }
 
+table {
+    width: 80%;
+    border-collapse: collapse; 
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+caption {
+    padding: 10px;
+    background-color: #1c5052;
+    color: #f2f2f2;
+    border-radius: 6px 6px 0 0;
+}
+th {
+    background-color: #5c8182;
+    color: #f2f2f2;
+    padding: 12px;
+}
+td {
+    padding: 12px;
+    text-align: center;
+    background-color: #eaeaea;
+    color: #134d4e;
+    border-bottom: 2px solid #134d4e;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 80px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(10, 12, 13, 0.3);
+
+}
+.formulario h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #1c5052;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #65918e;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+input:focus, select:focus {
+    outline: none;
+    border-color: #65918e;
+    box-shadow: 0 0 5px #65918e;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1c5052;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover {
+    box-shadow: 0 0 8px #134d4e;
+    font-weight: bold;
+}
+.contenedorExterior {
+    display: flex;
+    gap: 2rem;
+    padding: 10rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+}
 
 .piepagina {
-    background-color: #333e50;
-    color: #f1debd;
+    background-color: #213635;
+    color: #f2f2f2;
     text-align: center;
     padding: 2rem;
 }
