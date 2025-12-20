@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="fontawesome-free-7.1.0-web/css/all.min.css">
+    <!--Links para vincular con la hoja de estilos y la librería de íconos de FontAwesome-->
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="libreriaFontAwesome/css/all.css">
 </head>
 <body>
+    <!--Encabezado con logo y título para todas las páginas-->
     <header class="encabezado">
         <img src="img/logopagina.png" alt="Logo de desarrollo web" width="50">
         <span><strong>Introducción a los lenguajes del desarrollo web</strong></span>
     </header>
+    <!--Menú de navegación para todas las páginas-->
     <nav class="menu">
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -23,6 +26,7 @@
     </nav>
     <hr>    
     <div class="contenedor">
+        <!--Contenido principal de la página-->
         <section class="contenido">
             <h1>JavaScript: Interactividad y dinamismo</h1>
             <br>
@@ -55,9 +59,9 @@
             <p>
                 Las variables son contenedores en los que puedes almacenar valores. Primero se declara la variable con la palabra reservada 
                 <em>var</em> o <em>let</em>, seguida del nombre que se le vaya a dar. <br><br>
-                let nombreDeLaVariable = "Bob";<br><br>
-                Existen diferentes tipos de datos que puedes almacenar en las variables, como números, cadenas de texto, booleanos, arreglos y objetos.
             </p>
+            <p class="cod1">let nombreDeLaVariable = "Bob";</p><br>
+            <p>Existen diferentes tipos de datos que puedes almacenar en las variables, como números, cadenas de texto, booleanos, arreglos y objetos.</p>
             <br>
             <h3>Operadores</h3>
             <br>
@@ -79,27 +83,27 @@
                     <tr>
                         <td>Suma/concatenar (+)</td>
                         <td>Suma dos números o junta dos cadenas en una</td>
-                        <td>6 + 9;<br>"Hola " + "mundo!";</td>
+                        <td class="codtabla">6 + 9;<br>"Hola " + "mundo!";</td>
                     </tr>
                     <tr>
                         <td>Resta (-), multiplicación (*), división (/)</td>
                         <td>Operaciones básicas matemáticas</td>
-                        <td>9 - 3;<br>8 * 2;<br>9 / 3;</td>
+                        <td class="codtabla">9 - 3;<br>8 * 2;<br>9 / 3;</td>
                     </tr>
                     <tr>
                         <td>Asignación (=)</td>
                         <td>Asigna un valor a una variable</td>
-                        <td>let miVariable = 'Bob';</td>
+                        <td class="codtabla">let miVariable = 'Bob';</td>
                     </tr>
                     <tr>
                         <td>Identidad/igualdad (===)</td>
                         <td>Comprueba si dos valores son iguales entre sí, y devuelve valor de true/false</td>
-                        <td>let miVariable = 3;<br>miVariable === 4;</td>
+                        <td class="codtabla">let miVariable = 3;<br>miVariable === 4;</td>
                     </tr>
                     <tr>
                         <td>Negación, distinto (!, !==)</td>
                         <td>Equivale al operador lógico NOT, cambia true por false y viceversa</td>
-                        <td>let miVariable = 3;<br>miVariable !== 3;</td>
+                        <td class="codtabla">let miVariable = 3;<br>miVariable !== 3;</td>
                     </tr>
                 </tbody>
             </table>
@@ -110,22 +114,24 @@
                 Los condicionales son estructuras de código que permiten comprobar si una expresión devuelve true o no, 
                 y luego ejecuta un código diferente dependiendo del resultado. <br>
                 El condicional más comúnn es la llamada if... else. Observemos: <br><br>
-                let helado = "chocolate";<br>
-                if (helado === "chocolate") {<br>
-                alert("¡Sí, amo el helado de chocolate!");<br>
-                } else {<br>
-                alert("Awwww, pero mi favorito es el de chocolate...");<br>
-                }<br><br>
-                Si se cumple el if, se ejecuta el primer apartado, y si no se cumple la primera condición, se ejecuta el bloque dentro del else.
             </p>
+                <p class="cod1">let helado = "chocolate";</p><br>
+                <p class="cod1">if (helado === "chocolate") {</p>
+                <p class="cod2">alert("¡Sí, amo el helado de chocolate!");</p>
+                <p class="cod1">} else {</p>
+                <p class="cod2">alert("Awwww, pero mi favorito es el de chocolate...");</p>
+                <p class="cod1">}</p><br>
+                <p>Si se cumple el if, se ejecuta el primer apartado, y si no se cumple la primera condición, se ejecuta el bloque dentro del else.</p>
             <br>
             <h3>Funciones</h3>
             <br>
             <p>
                 Las funciones son una manera de encapsular una funcionalidad que quieres reutilizar, de modo que puedes llamar 
-                esa función con un solo nombre. Por ejemplo: <br><br>
-                let nombreDeLaVariable = document.querySelector("h1");<br>
-                alert("¡Hola!");<br><br>
+                esa función con un solo nombre. Por ejemplo: 
+            </p><br>
+            <p class="cod1">let nombreDeLaVariable = document.querySelector("h1");</p>
+            <p class="cod1">alert("¡Hola!");</p><br>
+            <p>    
                 Estas funciones: document.querySelector y alert, están integradas en el navegador para poder usarlas en cualquier momento. <br>
                 Si ves algo que parece un nombre de variable seguido de un paréntesis al final, lo más probable es que sea una función. Recuerda 
                 que las funciones toman con frecuencia <em>argumentos</em>, pedazos de datos que necesitan para hacer su trabajo; estos se colocan 
@@ -143,12 +149,14 @@
             <br>
             <img src="img/ejemplojavascript.png" alt="Ejemplo de código JavaScript" width="70%"> 
         </section>
+        <!--Contenido lateral para todas la páginas-->
         <aside class="lateral">
             <p>Para la revisión específica, te invito a explorar las secciones dedicadas a cada uno de estos lenguajes esenciales:</p><br>
             <a href="html.html">HTML: Estructura y contenido</a><br><br>
             <a href="css.html">CSS: Diseño, estilo y presentación</a><br><br>
             <a href="javascript.html">JavaScript: Interactividad y dinamismo</a><br><br>
             <br>
+            <!--Importación de íconos de FontAwesome-->
             <p>¡Síguenos en redes sociales para que no te pierdas las novedades!</p><br>
             <i class="fa-brands fa-whatsapp fa-xl" style="color: #027779;"></i> <br><br>            
             <i class="fa-brands fa-facebook fa-xl" style="color: #027779;"></i> <br><br>
@@ -156,8 +164,10 @@
             <i class="fa-brands fa-youtube fa-xl" style="color: #027779;"></i> <br><br>
 
         </aside>
+        <!--Contenido final para todas las páginas-->
         <article class="articulo">
             <h2>¿Cuál es la siguiente ruta?</h2>
+            <br>
             <p>
                 Ya entendimos los conceptos básicos de estos lenguajes esenciales del desarrollo web, lo ideal sería seguir con la ruta del aprendizaje, 
                 pues seguro estás aquí por ese motivo. O tal vez, ya te motivaste a continuar. <br>
@@ -173,6 +183,7 @@
     <br>
     <br>
     <hr>
+    <!--Footer para todas las páginas-->
     <footer class="piepagina">
         <p>&copy; 2025 Britney's Blog</p>
     </footer>
