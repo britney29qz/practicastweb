@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title> 
     <!--Links para vincular con la hoja de estilos y la librería de íconos de FontAwesome-->
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="libreriaFontAwesome/css/all.css">
 </head>
-<body>
+<body class="font-sans bg-gray-200 text-neutral-800 leading-relaxed">
     <!--Encabezado con logo y título para todas las páginas-->
-    <header class="encabezado">
-        <img src="img/logopagina.png" alt="Logo de desarrollo web" width="50">
+    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex justify-center gap-4">
+        <img src="img/logopagina.png" alt="Logo de desarrollo web" class="w-15">
         <span><strong>Introducción a los lenguajes del desarrollo web</strong></span>
     </header>
     <!--Menú de navegación para todas las páginas-->
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="html.html">HTML</a></li>
-            <li><a href="css.html">CSS</a></li>
-            <li><a href="javascript.html">JavaScript</a></li>
-            <li><a href="formulario.html">Formulario de inscripción</a></li>
+    <nav class="bg-teal-900 text-white flex justify-center p-4">
+        <ul class="flex flex-row gap-16 list-none no-underline">
+            <li><a class="hover:underline hover:font-bold" href="index.html">Inicio</a></li>
+            <li><a class="hover:underline hover:font-bold" href="html.html">HTML</a></li>
+            <li><a class="hover:underline hover:font-bold" href="css.html">CSS</a></li>
+            <li><a class="hover:underline hover:font-bold" href="javascript.html">JavaScript</a></li>
+            <li><a class="hover:underline hover:font-bold" href="formulario.html">Formulario de inscripción</a></li>
         </ul>
     </nav>
     <hr>
@@ -37,7 +37,7 @@
     </main>
     <hr> 
     <!--Footer para todas las páginas-->
-    <footer class="piepagina">
+    <footer class="bg-teal-950 text-white text-center p-8">
         <p>&copy; 2025 Britney's Blog</p>
     </footer>
 </body>

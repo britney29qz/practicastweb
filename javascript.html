@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <!--Links para vincular con la hoja de estilos y la librería de íconos de FontAwesome-->
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="libreriaFontAwesome/css/all.css">
 </head>
-<body>
+<body class="font-sans bg-gray-200 text-neutral-800 leading-relaxed">
     <!--Encabezado con logo y título para todas las páginas-->
-    <header class="encabezado">
-        <img src="img/logopagina.png" alt="Logo de desarrollo web" width="50">
+    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex justify-center gap-4">
+        <img src="img/logopagina.png" alt="Logo de desarrollo web" class="w-15">
         <span><strong>Introducción a los lenguajes del desarrollo web</strong></span>
     </header>
     <!--Menú de navegación para todas las páginas-->
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="html.html">HTML</a></li>
-            <li><a href="css.html">CSS</a></li>
-            <li><a href="javascript.html">JavaScript</a></li>
-            <li><a href="formulario.html">Formulario de inscripción</a></li>
+    <nav class="bg-teal-900 text-white flex justify-center p-4">
+        <ul class="flex flex-row gap-16 list-none no-underline">
+            <li><a class="hover:underline hover:font-bold" href="index.html">Inicio</a></li>
+            <li><a class="hover:underline hover:font-bold" href="html.html">HTML</a></li>
+            <li><a class="hover:underline hover:font-bold" href="css.html">CSS</a></li>
+            <li><a class="hover:underline hover:font-bold" href="javascript.html">JavaScript</a></li>
+            <li><a class="hover:underline hover:font-bold" href="formulario.html">Formulario de inscripción</a></li>
         </ul>
     </nav>
     <hr>    
-    <div class="contenedor">
+    <div class="grid grid-cols-12 gap-8 p-20">
         <!--Contenido principal de la página-->
-        <section class="contenido">
-            <h1>JavaScript: Interactividad y dinamismo</h1>
+        <section class="col-span-9 p-12 border-r-2 border-teal-800">
+            <h1 class="col-span-12 text-3xl md:text-4xl font-bold text-center mb-8">JavaScript: Interactividad y dinamismo</h1>
             <br>
             <p>
                 JavaScript se trata de un lenguaje de programación con el que puedes agregar <em>interactividad y dinamismo</em> a tu 
@@ -40,9 +40,9 @@
                 utilizando tecnologías necesarias para ello, como Node.js.
             </p>
             <br>
-            <img src="img/javascriptpagina.png" alt="Imágen de JavaScript" width="70%">
+            <img src="img/javascriptpagina.png" alt="Imágen de JavaScript" class="w-50 md:w-100 lg:w-150">
             <br><br>            
-            <h2>Ventajas</h2>
+            <h2 class="text-2xl font-semibold mb-4">Ventajas</h2>
             <br>
             <p>
                 Ya tenemos la noción de las <b>ventajas</b> que brinda este lenguaje, recordemos que agrega movimiento a las páginas web, además de permitir el 
@@ -54,7 +54,7 @@
                 ventajas que tiene el uso de JavaScript en el desarrollo web.
             </p>
             <br>
-            <h3>Variables</h3>
+            <h3 class="text-xl font-semibold mb-4">Variables</h3>
             <br>
             <p>
                 Las variables son contenedores en los que puedes almacenar valores. Primero se declara la variable con la palabra reservada 
@@ -63,23 +63,23 @@
             <p class="cod1">let nombreDeLaVariable = "Bob";</p><br>
             <p>Existen diferentes tipos de datos que puedes almacenar en las variables, como números, cadenas de texto, booleanos, arreglos y objetos.</p>
             <br>
-            <h3>Operadores</h3>
+            <h3 class="text-xl font-semibold mb-4">Operadores</h3>
             <br>
             <p>
                 Un operador es un símbolo matemático que puede actuar sobre dos valores o variable y producir un resultado. <br>
                 En la siguiente tabla, se muestran algunos de los operadores más comunes en JavaScript: <br>
             </p>
             <br>
-            <table>
-                <caption><b>Operadores comunes</b></caption>
-                <thead>
+            <table class="w-4/5 mx-auto border-collapse p-12">
+                <caption class="bg-teal-900 text-white rounded-t-md p-3"><b>Operadores comunes</b></caption>
+                <thead class="bg-teal-700 opacity-75 text-white">
                     <tr>
                         <th>Operador</th>
                         <th>Descripción</th>
                         <th>Ejemplo</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="text-center bg-gray-200 text-teal-900 border-b-2">
                     <tr>
                         <td>Suma/concatenar (+)</td>
                         <td>Suma dos números o junta dos cadenas en una</td>
@@ -108,7 +108,7 @@
                 </tbody>
             </table>
             <br>
-            <h3>Condicionales</h3>
+            <h3 class="text-xl font-semibold mb-4">Condicionales</h3>
             <br>
             <p>
                 Los condicionales son estructuras de código que permiten comprobar si una expresión devuelve true o no, 
@@ -123,7 +123,7 @@
                 <p class="cod1">}</p><br>
                 <p>Si se cumple el if, se ejecuta el primer apartado, y si no se cumple la primera condición, se ejecuta el bloque dentro del else.</p>
             <br>
-            <h3>Funciones</h3>
+            <h3 class="text-xl font-semibold mb-4">Funciones</h3>
             <br>
             <p>
                 Las funciones son una manera de encapsular una funcionalidad que quieres reutilizar, de modo que puedes llamar 
@@ -138,7 +138,7 @@
                 dentro de los paréntesis.
             </p>
             <br>
-            <h2>Aplicaciones</h2>
+            <h2 class="text-2xl font-semibold mb-4">Aplicaciones</h2>
             <br>
             <p>
                 A continuación, te muestro un ejemplo sencillo de código JavaScript integrado en el HTML; te ayudará a entender la forma que tiene al complementarse. <br>
@@ -147,10 +147,10 @@
                 Recuerda probar el código en un editor que permita integrar los scripts de JavaScript. ¡Diviértete! 
             </p>
             <br>
-            <img src="img/ejemplojavascript.png" alt="Ejemplo de código JavaScript" width="70%"> 
+            <img src="img/ejemplojavascript.png" alt="Ejemplo de código JavaScript" class="w-50 md:w-100 lg:w-150"> 
         </section>
         <!--Contenido lateral para todas la páginas-->
-        <aside class="lateral">
+        <aside class="col-span-3 pt-28">
             <p>Para la revisión específica, te invito a explorar las secciones dedicadas a cada uno de estos lenguajes esenciales:</p><br>
             <a href="html.html">HTML: Estructura y contenido</a><br><br>
             <a href="css.html">CSS: Diseño, estilo y presentación</a><br><br>
@@ -165,8 +165,8 @@
 
         </aside>
         <!--Contenido final para todas las páginas-->
-        <article class="articulo">
-            <h2>¿Cuál es la siguiente ruta?</h2>
+        <article class="col-span-12 mx-32 my-0 p-20 rounded-xl shadow-xl">
+            <h2 class="text-2xl font-semibold mb-4">¿Cuál es la siguiente ruta?</h2>
             <br>
             <p>
                 Ya entendimos los conceptos básicos de estos lenguajes esenciales del desarrollo web, lo ideal sería seguir con la ruta del aprendizaje, 
@@ -184,7 +184,7 @@
     <br>
     <hr>
     <!--Footer para todas las páginas-->
-    <footer class="piepagina">
+    <footer class="bg-teal-950 text-white text-center p-8">
         <p>&copy; 2025 Britney's Blog</p>
     </footer>
 </body>

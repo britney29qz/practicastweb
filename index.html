@@ -5,31 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <!--Links para vincular con la hoja de estilos y la librería de íconos de FontAwesome-->
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="libreriaFontAwesome/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap">
+
 </head>
-<body>
+<body class="font-sans bg-gray-200 text-neutral-800 leading-relaxed">
     <!--Encabezado con logo y título para todas las páginas-->
-    <header class="encabezado">
-        <img src="img/logopagina.png" alt="Logo de desarrollo web" width="50">
+    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex justify-center gap-4">
+        <img src="img/logopagina.png" alt="Logo de desarrollo web" class="w-15">
         <span><strong>Introducción a los lenguajes del desarrollo web</strong></span>
     </header>
     <!--Menú de navegación para todas las páginas-->
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="html.html">HTML</a></li>
-            <li><a href="css.html">CSS</a></li>
-            <li><a href="javascript.html">JavaScript</a></li>
-            <li><a href="formulario.html">Formulario de inscripción</a></li>
+    <nav class="bg-teal-900 text-white flex justify-center p-4">
+        <ul class="flex flex-row gap-16 list-none no-underline">
+            <li><a class="hover:underline hover:font-bold" href="index.html">Inicio</a></li>
+            <li><a class="hover:underline hover:font-bold" href="html.html">HTML</a></li>
+            <li><a class="hover:underline hover:font-bold" href="css.html">CSS</a></li>
+            <li><a class="hover:underline hover:font-bold" href="javascript.html">JavaScript</a></li>
+            <li><a class="hover:underline hover:font-bold" href="formulario.html">Formulario de inscripción</a></li>
         </ul>
     </nav>
     <hr>
-    <div class="contenedor">
-        <h1>Introducción a los lenguajes del desarrollo web: HTML, CSS y JavaScript</h1>
+    <div class="grid grid-cols-12 gap-8 p-20">
+        <h1 class="col-span-12 text-3xl md:text-4xl font-bold text-center mb-8">Introducción a los lenguajes del desarrollo web: HTML, CSS y JavaScript</h1>
         <!--Contenido principal de la página-->
-        <section class="contenido">
-            <h2>¿Cuáles son los lenguajes del desarrollo? Vistazo general</h2> <br>
+        <section class="col-span-9 p-12 border-r-2 border-teal-800">
+            <h2 class="text-2xl font-semibold mb-4">¿Cuáles son los lenguajes del desarrollo? Vistazo general</h2> <br>
             <p>
                 En el inmenso mundo del desarrollo web, el pilar de toda construcción es y seguirá siendo: el lenguaje HTML. 
                 Resulta ser la base fundamental porque da estructura y significado a la mayor parte del contenido que vemos en línea. 
@@ -37,7 +39,7 @@
                 Es por esta razón, que conocer el papel que desempeña cada uno en la creación de sitios web es la clave para avanzar con el desarrollo 
                 de nuestras páginas online.
             </p> <br>
-            <img src="img/principalpagina.jpg" alt="Imagen representativa de HTML, CSS y JavaScript" width="70%"> 
+            <img src="img/principalpagina.jpg" alt="Imagen representativa de HTML, CSS y JavaScript" class="w-50 md:w-100 lg:w-150"> 
             <br><br>
             <p> 
                 Para continuar con este vistazo de los lenguajes del desarrollo web, vamos a explicar qué es cada uno de estos tres lenguajes en páginas distintas, 
@@ -48,9 +50,9 @@
             <p>
                 A continuación, se presenta una tabla comparativa que resume la función de cada lenguaje y cómo se complementan entre sí en el desarrollo web:
             </p> <br>
-            <table>
-                <caption><b>Descripción de HTML, CSS y JavaScript</b></caption>
-                <thead>
+            <table class="w-4/5 mx-auto border-collapse p-12">
+                <caption class="bg-teal-900 text-white rounded-t-md p-3"><b>Descripción de HTML, CSS y JavaScript</b></caption>
+                <thead class="bg-teal-700 opacity-75 text-white">
                     <tr>
                         <th>Lenguaje</th>
                         <th>Tipo de lenguaje</th>
@@ -59,8 +61,8 @@
                         <th>Funcionamiento</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody class="text-center bg-gray-200 text-teal-900 border-b-2">
+                    <tr class="">
                         <td>HTML</td>
                         <td>Lenguaje de marcado</td>
                         <td>Proporcionar la estructura y el contenido de la página web, mediante etiquetas semánticas</td>
@@ -85,7 +87,7 @@
             </table>
         </section>
         <!--Contenido lateral para todas la páginas-->
-        <aside class="lateral">
+        <aside class="col-span-3 pt-28">
             <p>Para la revisión específica, te invito a explorar las secciones dedicadas a cada uno de estos lenguajes esenciales:</p><br>
             <a href="html.html">HTML: Estructura y contenido</a><br><br>
             <a href="css.html">CSS: Diseño, estilo y presentación</a><br><br>
@@ -99,8 +101,8 @@
             <i class="fa-brands fa-youtube fa-xl" style="color: #027779;"></i> <br><br>
         </aside>
         <!--Contenido final para todas las páginas-->
-        <article class="articulo">
-            <h2>¿Cuál es la siguiente ruta?</h2>
+        <article class="col-span-12 mx-32 my-0 p-20 rounded-xl shadow-xl">
+            <h2 class="text-2xl font-semibold mb-4">¿Cuál es la siguiente ruta?</h2>
             <br>
             <p>
                 Ya entendimos los conceptos básicos de estos lenguajes esenciales del desarrollo web, lo ideal sería seguir con la ruta del aprendizaje, 
@@ -118,7 +120,7 @@
     <br>
     <hr>
     <!--Footer para todas las páginas-->
-    <footer class="piepagina">
+    <footer class="bg-teal-950 text-white text-center p-8">
         <p>&copy; 2025 Britney's Blog</p>
     </footer>
 </body>
