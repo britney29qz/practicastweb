@@ -8,29 +8,27 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="libreriaFontAwesome/css/all.css">
 </head>
-<body class="font-sans bg-gray-200 text-neutral-800 leading-relaxed">
+<body class="font-sans bg-gray-100 text-neutral-800 leading-relaxed">
     <!--Encabezado con logo y título para todas las páginas-->
-    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex justify-center gap-4">
+    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex flex-col md:flex-row items-center justify-center gap-4">
         <img src="img/logopagina.png" alt="Logo de desarrollo web" class="w-15">
         <span><strong>Introducción a los lenguajes del desarrollo web</strong></span>
     </header>
     <!--Menú de navegación para todas las páginas-->
-    <nav class="bg-teal-900 text-white flex justify-center p-4">
-        <ul class="flex flex-row gap-16 list-none no-underline">
+    <nav class="bg-teal-900 text-white p-4">
+        <ul class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-16 list-none no-underline">
             <li><a class="hover:underline hover:font-bold" href="index.html">Inicio</a></li>
             <li><a class="hover:underline hover:font-bold" href="html.html">HTML</a></li>
             <li><a class="hover:underline hover:font-bold" href="css.html">CSS</a></li>
             <li><a class="hover:underline hover:font-bold" href="javascript.html">JavaScript</a></li>
             <li><a class="hover:underline hover:font-bold" href="formulario.html">Formulario de inscripción</a></li>
         </ul>
-    </nav>
-    <hr>    
-    <div class="grid grid-cols-12 gap-8 p-20">  
+    </nav>  
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8 p-5 md:p-20">  
         <!--Contenido principal de la página-->
-        <section class="col-span-9 p-12 border-r-2 border-teal-800">
-            <h1 class="col-span-12 text-3xl md:text-4xl font-bold text-center mb-8">HTML: Estructura y contenido</h1>
-            <br>
-            <p>
+        <section class="md:col-span-9 p-5 md:p-12 md:border-r-2 border-teal-800">
+            <h1 class="text-2xl md:text-4xl font-bold text-center mb-10">HTML: Estructura y contenido</h1>
+            <p class="mb-8">
                 El lenguaje HTML es el encargado de la estructura y el contenido básico de una página web. 
                 Hay que tomar en cuenta que es el responsable de definir el <em>esqueleto</em> que va a tener, determinando la disposición de los diferentes elementos 
                 y su relación entre sí. Es el más utilizado para la construcción de sitios web, pues consiste de una serie de etiquetas o elementos que definen la 
@@ -38,19 +36,15 @@
                 <br><br>
                 Cuando accedes a una página web, no ves el código HTML a simple vista, a menos que presiones la tecla F2. 
             </p>
-            <br>
-            <img src="img/htmlpagina.png" alt="Imagen de HTML" class="w-50 md:w-100 lg:w-150">
-            <br><br>
-            <h2 class="text-2xl font-semibold mb-4">Ventajas</h2>
-            <br>
-            <p>
+            <img src="img/htmlpagina.png" alt="Imagen de HTML" class="w-full md:w-3/4 lg:w-1/2 mx-auto">
+            <h2 class="text-xl md:text-2xl font-semibold mt-10 mb-8">Ventajas</h2>
+            <p class="mt-8 mb-8">
                 Hace mucho tiempo, HTML era más limitado; pero con el tiempo ha evolucionado y se han añadido nuevos elementos y atributos que permiten una mayor flexibilidad. 
                 Puede incluir texto, imágenes o videos, incorporar música, formularios, enlaces, botones, tablas y otros elementos interactivos.
                 También están los elementos estructurales, como &lt;div&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;section&gt; y &lt;article&gt;. Todo esto representa 
                 <b>ventajas</b> significativas, ya que permiten crear diseños más coherentes y significativos. <br><br>
                 Aquí tienes una lista de elementos esenciales que no pueden faltar en tu estructura HTML:
             </p>
-            <br>
             <ul role="list" class="pl-6 list-disc marker:text-teal-900 marker:text-lg">
                 <li><b>"&lt;!DOCTYPE html&gt;"</b> es el elemento que define el tipo de documento que es, y la versión de HTML que se utiliza.</li>
                 <li><b>"&lt;html&gt;"</b> es el elemento raíz que envuelve todo el contenido de la página web y que tiene un principio y un fin. Cuando se crea un documento 
@@ -58,51 +52,45 @@
                 <li><b>"&lt;head&gt;"</b> es la etiqueta que contiene metadatos, como el título de la página, los enlaces a hojas de estilo CSS y también scripts de JavaScript.</li>
                 <li><b>"&lt;body&gt;"</b> abarca todo el cuerpo del texto, es decir, aquí se coloca el contenido visible de la página: texto, imágenes y enlaces.</li>
             </ul>
-            <br>
-            <h2 class="text-2xl font-semibold mb-4">Aplicaciones</h2>
-            <br>
-            <p>
+            <h2 class="text-xl md:text-2xl font-semibold mt-10 mb-8">Aplicaciones</h2>
+            <p class="mb-8">
                 A continuación, te comparto un ejemplo sencillo de HTML, usando algunas de las etiquetas que hemos mencionado en esta sección. Recuerda probar el código en tu edito 
                 de confianza para ir obervando cómo se van generando los diferentes elementos en la página web. ¡Es muy divertido!
             </p>
-            <br>
-            <img src="img/ejemplohtml.png" alt="Ejemplo de código HTML" class="w-50 md:w-100 lg:w-150">
-            <br><br>
+            <img src="img/ejemplohtml.png" alt="Ejemplo de código HTML" class="w-full md:w-3/4 lg:w-1/2 mx-auto">
         </section>
         <!--Contenido lateral para todas la páginas-->
-        <aside class="col-span-3 pt-28">
-            <p>Para la revisión específica, te invito a explorar las secciones dedicadas a cada uno de estos lenguajes esenciales:</p><br>
-            <a href="html.html">HTML: Estructura y contenido</a><br><br>
-            <a href="css.html">CSS: Diseño, estilo y presentación</a><br><br>
-            <a href="javascript.html">JavaScript: Interactividad y dinamismo</a><br><br>
-            <br>
+        <aside class="md:col-span-3 mt-10 md:mt-0 md:pt-28 m-5">
+            <p>Para la revisión específica, te invito a explorar las secciones dedicadas a cada uno de estos lenguajes esenciales:</p>
+            <nav class="flex flex-col space-y-2 mt-8">
+                <a href="html.html" class="text-teal-700 hover:text-teal-900 hover:underline">HTML: Estructura y contenido</a>
+                <a href="css.html" class="text-teal-700 hover:text-teal-900 hover:underline">CSS: Diseño, estilo y presentación</a>
+                <a href="javascript.html" class="text-teal-700 hover:text-teal-900 hover:underline">JavaScript: Interactividad y dinamismo</a>
+            </nav>
+            <p class="mt-8 mb-8">¡Síguenos en redes sociales para que no te pierdas las novedades!</p>
             <!--Importación de íconos de FontAwesome-->
-            <p>¡Síguenos en redes sociales para que no te pierdas las novedades!</p><br>
-            <i class="fa-brands fa-whatsapp fa-xl" style="color: #027779;"></i> <br><br>            
-            <i class="fa-brands fa-facebook fa-xl" style="color: #027779;"></i> <br><br>
-            <i class="fa-brands fa-instagram fa-xl" style="color: #027779;"></i> <br><br>
-            <i class="fa-brands fa-youtube fa-xl" style="color: #027779;"></i> <br><br>
-
+            <nav class="flex flex-row justify-around md:flex-col space-y-4">
+                <a href="" target="_blank"><i class="fa-brands fa-whatsapp fa-xl cursor-pointer" style="color: #027779;"></i></a>        
+                <a href="" target="_blank"><i class="fa-brands fa-facebook fa-xl cursor -pointer" style="color: #027779;"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-instagram fa-xl cursor-pointer" style="color: #027779;"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-youtube fa-xl cursor pointer" style="color: #027779;"></i></a>
+            </nav>
         </aside>
         <!--Contenido final para todas las páginas-->
-        <article class="col-span-12 mx-32 my-0 p-20 rounded-xl shadow-xl">
+        <article class="md:col-span-12 mx-4 md:mx-32 p-10 md:p-20 rounded-xl shadow-xl">
             <h2 class="text-2xl font-semibold mb-4">¿Cuál es la siguiente ruta?</h2>
-            <br>
-            <p>
+            <p class="mt-5 mb-5">
                 Ya entendimos los conceptos básicos de estos lenguajes esenciales del desarrollo web, lo ideal sería seguir con la ruta del aprendizaje, 
                 pues seguro estás aquí por ese motivo. O tal vez, ya te motivaste a continuar. <br>
                 El siguiente paso es entrar de lleno al estudio de HTML, CSS y JavaScript; si estás interesado, te invito a llenar el siguiente formulario 
-                de inscripción a nuestros cursos. <br>
+                de inscripción a nuestros cursos.
             </p>
-            <a href="formulario.html">Formulario de inscripción</a>
-            <p>
+            <a href="formulario.html" class="text-teal-700 hover:text-teal-900 hover:underline">Formulario de inscripción</a>
+            <p class="mt-5">
                 ¡Vamos a la siguiente ruta!
             </p>
         </article>
     </div> 
-    <br>
-    <br>
-    <hr> 
     <!--Footer para todas las páginas-->
     <footer class="bg-teal-950 text-white text-center p-8">
         <p>&copy; 2025 Britney's Blog</p>

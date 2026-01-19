@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap">
 
 </head>
-<body class="font-sans bg-gray-200 text-neutral-800 leading-relaxed">
+<body class="font-sans bg-gray-100 text-neutral-800 leading-relaxed">
     <!--Encabezado con logo y título para todas las páginas-->
-    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex justify-center gap-4">
+    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex flex-col md:flex-row items-center justify-center gap-4">
         <img src="img/logopagina.png" alt="Logo de desarrollo web" class="w-15">
         <span><strong>Introducción a los lenguajes del desarrollo web</strong></span>
     </header>
     <!--Menú de navegación para todas las páginas-->
-    <nav class="bg-teal-900 text-white flex justify-center p-4">
-        <ul class="flex flex-row gap-16 list-none no-underline">
+    <nav class="bg-teal-900 text-white p-4">
+        <ul class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-16 list-none no-underline">
             <li><a class="hover:underline hover:font-bold" href="index.html">Inicio</a></li>
             <li><a class="hover:underline hover:font-bold" href="html.html">HTML</a></li>
             <li><a class="hover:underline hover:font-bold" href="css.html">CSS</a></li>
@@ -26,99 +26,97 @@
             <li><a class="hover:underline hover:font-bold" href="formulario.html">Formulario de inscripción</a></li>
         </ul>
     </nav>
-    <hr>
-    <div class="grid grid-cols-12 gap-8 p-20">
-        <h1 class="col-span-12 text-3xl md:text-4xl font-bold text-center mb-8">Introducción a los lenguajes del desarrollo web: HTML, CSS y JavaScript</h1>
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8 p-5 md:p-20">
+        <h1 class="md:col-span-12 text-2xl md:text-4xl font-bold text-center mt-5 mb-5">Introducción a los lenguajes del desarrollo web: HTML, CSS y JavaScript</h1>
         <!--Contenido principal de la página-->
-        <section class="col-span-9 p-12 border-r-2 border-teal-800">
-            <h2 class="text-2xl font-semibold mb-4">¿Cuáles son los lenguajes del desarrollo? Vistazo general</h2> <br>
-            <p>
+        <section class="md:col-span-9 p-5 md:p-12 md:border-r-2 border-teal-800">
+            <h2 class="text-xl md:text-2xl font-semibold mb-10">¿Cuáles son los lenguajes del desarrollo? Vistazo general</h2>
+            <p class="mb-8">
                 En el inmenso mundo del desarrollo web, el pilar de toda construcción es y seguirá siendo: el lenguaje HTML. 
                 Resulta ser la base fundamental porque da estructura y significado a la mayor parte del contenido que vemos en línea. 
                 Sin embargo, no está solo, ya que trabaja en conjunto con otros lenguajes como CSS y JavaScript, para ofrecer experiencias completas y atractivas. 
                 Es por esta razón, que conocer el papel que desempeña cada uno en la creación de sitios web es la clave para avanzar con el desarrollo 
                 de nuestras páginas online.
-            </p> <br>
-            <img src="img/principalpagina.jpg" alt="Imagen representativa de HTML, CSS y JavaScript" class="w-50 md:w-100 lg:w-150"> 
-            <br><br>
-            <p> 
+            </p>
+            <img src="img/principalpagina.jpg" alt="Imagen representativa de HTML, CSS y JavaScript" class="w-full md:w-3/4 lg:w-1/2 mx-auto"> 
+            <p class="mt-8 mb-8"> 
                 Para continuar con este vistazo de los lenguajes del desarrollo web, vamos a explicar qué es cada uno de estos tres lenguajes en páginas distintas, 
                 para comprender de mejor manera uno por uno, para qué sirven y cuáles son sus principales diferencias. También se mostrarán las aplicaciones 
                 prácticas para cada uno de ellos. ¡Empecemos!
-                <br><br>
             </p>
-            <p>
+            <p class="mb-8">
                 A continuación, se presenta una tabla comparativa que resume la función de cada lenguaje y cómo se complementan entre sí en el desarrollo web:
-            </p> <br>
-            <table class="w-4/5 mx-auto border-collapse p-12">
-                <caption class="bg-teal-900 text-white rounded-t-md p-3"><b>Descripción de HTML, CSS y JavaScript</b></caption>
-                <thead class="bg-teal-700 opacity-75 text-white">
-                    <tr>
-                        <th>Lenguaje</th>
-                        <th>Tipo de lenguaje</th>
-                        <th>Propósito</th>
-                        <th>Rol en la web</th>
-                        <th>Funcionamiento</th>
-                    </tr>
-                </thead>
-                <tbody class="text-center bg-gray-200 text-teal-900 border-b-2">
-                    <tr class="">
-                        <td>HTML</td>
-                        <td>Lenguaje de marcado</td>
-                        <td>Proporcionar la estructura y el contenido de la página web, mediante etiquetas semánticas</td>
-                        <td>El "esqueleto" de la página</td>
-                        <td>Define elementos como títulos, párrafos, imágenes y enlaces</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>Lenguaje de hojas de estilo</td>
-                        <td>Controlar la presentación visual, el formato y el diseño (colores, fuentes, etc.)</td>
-                        <td>La "piel" de la página</td>
-                        <td>Aplica estilos a los elementos HTML</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Lenguaje de programación</td>
-                        <td>Implementar la interactividad y el comportamiento dinámico</td>
-                        <td>El "músculo" que le da movimiento al cuerpo de la página</td>
-                        <td>Modifica el contenido y los estilos en tiempo real y responde a eventos del usuario</td>
-                    </tr>
-                </tbody>
-            </table>
+            </p>
+            <div class="overflow-x-auto">
+                <table class="min-w-full border-collapse table-auto">
+                    <caption class="bg-teal-900 text-white rounded-t-md p-3"><b>Descripción de HTML, CSS y JavaScript</b></caption>
+                    <thead class="bg-teal-700 opacity-75 text-white">
+                        <tr>
+                            <th class="p-4">Lenguaje</th>
+                            <th>Tipo de lenguaje</th>
+                            <th>Propósito</th>
+                            <th>Rol en la web</th>
+                            <th>Funcionamiento</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-gray-200 text-teal-900 divide-y divide-teal-300 border-b-2">
+                        <tr>
+                            <td class="p-4 align-top">HTML</td>
+                            <td class="p-4 align-top">Lenguaje de marcado</td>
+                            <td class="p-4 align-top">Proporcionar la estructura y el contenido de la página web, mediante etiquetas semánticas</td>
+                            <td class="p-4 align-top">El "esqueleto" de la página</td>
+                            <td class="p-4 align-top">Define elementos como títulos, párrafos, imágenes y enlaces</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">CSS</td>
+                            <td class="p-4 align-top">Lenguaje de hojas de estilo</td>
+                            <td class="p-4 align-top">Controlar la presentación visual, el formato y el diseño (colores, fuentes, etc.)</td>
+                            <td class="p-4 align-top">La "piel" de la página</td>
+                            <td class="p-4 align-top">Aplica estilos a los elementos HTML</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">JavaScript</td>
+                            <td class="p-4 align-top">Lenguaje de programación</td>
+                            <td class="p-4 align-top">Implementar la interactividad y el comportamiento dinámico</td>
+                            <td class="p-4 align-top">El "músculo" que le da movimiento al cuerpo de la página</td>
+                            <td class="p-4 align-top">Modifica el contenido y los estilos en tiempo real y responde a eventos del usuario</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
         <!--Contenido lateral para todas la páginas-->
-        <aside class="col-span-3 pt-28">
-            <p>Para la revisión específica, te invito a explorar las secciones dedicadas a cada uno de estos lenguajes esenciales:</p><br>
-            <a href="html.html">HTML: Estructura y contenido</a><br><br>
-            <a href="css.html">CSS: Diseño, estilo y presentación</a><br><br>
-            <a href="javascript.html">JavaScript: Interactividad y dinamismo</a><br><br>
-            <br>
-            <p>¡Síguenos en redes sociales para que no te pierdas las novedades!</p><br>
+        <aside class="md:col-span-3 mt-10 md:mt-0 md:pt-28 m-5">
+            <p>Para la revisión específica, te invito a explorar las secciones dedicadas a cada uno de estos lenguajes esenciales:</p>
+            <nav class="flex flex-col space-y-2 mt-8">
+                <a href="html.html" class="text-teal-700 hover:text-teal-900 hover:underline">HTML: Estructura y contenido</a>
+                <a href="css.html" class="text-teal-700 hover:text-teal-900 hover:underline">CSS: Diseño, estilo y presentación</a>
+                <a href="javascript.html" class="text-teal-700 hover:text-teal-900 hover:underline">JavaScript: Interactividad y dinamismo</a>
+            </nav>
+            <p class="mt-8 mb-8">¡Síguenos en redes sociales para que no te pierdas las novedades!</p>
             <!--Importación de íconos de FontAwesome-->
-            <i class="fa-brands fa-whatsapp fa-xl" style="color: #027779;"></i> <br><br>         
-            <i class="fa-brands fa-facebook fa-xl" style="color: #027779;"></i> <br><br>
-            <i class="fa-brands fa-instagram fa-xl" style="color: #027779;"></i> <br><br>
-            <i class="fa-brands fa-youtube fa-xl" style="color: #027779;"></i> <br><br>
+            <nav class="flex flex-row justify-around md:flex-col space-y-4">
+                <a href="" target="_blank"><i class="fa-brands fa-whatsapp fa-xl cursor-pointer" style="color: #027779;"></i></a>        
+                <a href="" target="_blank"><i class="fa-brands fa-facebook fa-xl cursor -pointer" style="color: #027779;"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-instagram fa-xl cursor-pointer" style="color: #027779;"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-youtube fa-xl cursor pointer" style="color: #027779;"></i></a>
+            </nav>
         </aside>
         <!--Contenido final para todas las páginas-->
-        <article class="col-span-12 mx-32 my-0 p-20 rounded-xl shadow-xl">
+        <article class="md:col-span-12 mx-4 md:mx-32 p-10 md:p-20 rounded-xl shadow-xl">
             <h2 class="text-2xl font-semibold mb-4">¿Cuál es la siguiente ruta?</h2>
-            <br>
-            <p>
+            <p class="mt-5 mb-5">
                 Ya entendimos los conceptos básicos de estos lenguajes esenciales del desarrollo web, lo ideal sería seguir con la ruta del aprendizaje, 
                 pues seguro estás aquí por ese motivo. O tal vez, ya te motivaste a continuar. <br>
                 El siguiente paso es entrar de lleno al estudio de HTML, CSS y JavaScript; si estás interesado, te invito a llenar el siguiente formulario 
                 de inscripción a nuestros cursos.
             </p>
-            <a href="formulario.html">Formulario de inscripción</a>
-            <p>
+            <a href="formulario.html" class="text-teal-700 hover:text-teal-900 hover:underline">Formulario de inscripción</a>
+            <p class="mt-5">
                 ¡Vamos a la siguiente ruta!
             </p>
         </article>
     </div>
-    <br>
-    <br>
-    <hr>
     <!--Footer para todas las páginas-->
     <footer class="bg-teal-950 text-white text-center p-8">
         <p>&copy; 2025 Britney's Blog</p>

@@ -8,15 +8,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="libreriaFontAwesome/css/all.css">
 </head>
-<body class="font-sans bg-gray-200 text-neutral-800 leading-relaxed">
+<body class="font-sans bg-gray-100 text-neutral-800 leading-relaxed">
     <!--Encabezado con logo y título para todas las páginas-->
-    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex justify-center gap-4">
+    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex flex-col md:flex-row items-center justify-center gap-4">
         <img src="img/logopagina.png" alt="Logo de desarrollo web" class="w-15">
         <span><strong>Introducción a los lenguajes del desarrollo web</strong></span>
     </header>
     <!--Menú de navegación para todas las páginas-->
-    <nav class="bg-teal-900 text-white flex justify-center p-4">
-        <ul class="flex flex-row gap-16 list-none no-underline">
+    <nav class="bg-teal-900 text-white p-4">
+        <ul class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-16 list-none no-underline">
             <li><a class="hover:underline hover:font-bold" href="index.html">Inicio</a></li>
             <li><a class="hover:underline hover:font-bold" href="html.html">HTML</a></li>
             <li><a class="hover:underline hover:font-bold" href="css.html">CSS</a></li>
@@ -24,16 +24,15 @@
             <li><a class="hover:underline hover:font-bold" href="formulario.html">Formulario de inscripción</a></li>
         </ul>
     </nav>
-    <hr>
     <!--Contenido principal de la página-->
-    <main class="contenedorExterior">
-        <h1>¡Gracias por inscribirte!</h1>
-        <p>
+    <main class="flex flex-wrap justify-center gap-8 px-10 py-10 md:px-70 md:py-25">
+        <h1 class="text-2xl md:text-4xl text-center font-bold mb-8">¡Gracias por inscribirte!</h1>
+        <p class="text-center">
             Registro exitoso. Nos pondremos en contacto contigo a través del correo electrónico proporcionado 
             con más detalles sobre el curso seleccionado.
         </p>
         <!--Importación de íconos de FontAwesome-->
-        <i class="fa-solid fa-bell fa-2xl" style="color: #d3cc37;"></i>
+        <i class="fa-solid fa-bell fa-2xl pb-15" style="color: #d3cc37;"></i>
     </main>
     <hr> 
     <!--Footer para todas las páginas-->

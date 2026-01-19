@@ -8,15 +8,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="libreriaFontAwesome/css/all.css">
 </head>
-<body class="font-sans bg-gray-200 text-neutral-800 leading-relaxed">
+<body class="font-sans bg-gray-100 text-neutral-800 leading-relaxed">
     <!--Encabezado con logo y título para todas las páginas-->
-    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex justify-center gap-4">
+    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex flex-col md:flex-row items-center justify-center gap-4">
         <img src="img/logopagina.png" alt="Logo de desarrollo web" class="w-15">
         <span><strong>Introducción a los lenguajes del desarrollo web</strong></span>
     </header>
     <!--Menú de navegación para todas las páginas-->
-    <nav class="bg-teal-900 text-white flex justify-center p-4">
-        <ul class="flex flex-row gap-16 list-none no-underline">
+    <nav class="bg-teal-900 text-white p-4">
+        <ul class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-16 list-none no-underline">
             <li><a class="hover:underline hover:font-bold" href="index.html">Inicio</a></li>
             <li><a class="hover:underline hover:font-bold" href="html.html">HTML</a></li>
             <li><a class="hover:underline hover:font-bold" href="css.html">CSS</a></li>
@@ -24,13 +24,11 @@
             <li><a class="hover:underline hover:font-bold" href="formulario.html">Formulario de inscripción</a></li>
         </ul>
     </nav>
-    <hr>    
-    <div class="grid grid-cols-12 gap-8 p-20">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8 p-5 md:p-20">
         <!--Contenido principal de la página-->
-        <section class="col-span-9 p-12 border-r-2 border-teal-800">
-            <h1 class="col-span-12 text-3xl md:text-4xl font-bold text-center mb-8">CSS: Diseño, estilo y presentación</h1>
-            <br>
-            <p>
+        <section class="md:col-span-9 p-5 md:p-12 md:border-r-2 border-teal-800">
+            <h1 class="text-2xl md:text-4xl font-bold text-center mb-10">CSS: Diseño, estilo y presentación</h1>
+            <p class="mb-8">
                 CSS es un lenguaje que se centra en el diseño y la presentación de una página web; permite alterar la <em>apariencia</em> de los elementos 
                 HTML y controlar aspectos como el color, los márgenes, el tipo de letra, el diseño y otros aspectos visuales que son clave para la 
                 experiencia del usuario dentro del sitio web.
@@ -38,12 +36,9 @@
                 Como te permite separar la presentación del contenido, puedes mantener un diseño coherente en todo tu sitio web de manera más sencilla,
                 creando diseños atractivos y gestioinando los cambios visuales rápidamente.
             </p>
-            <br>
-            <img src="img/csspagina.jpg" alt="Imágen de CSS" class="w-50 md:w-100 lg:w-150">
-            <br><br>
-            <h2 class="text-2xl font-semibold mb-4">Ventajas</h2>
-            <br>
-            <p>
+            <img src="img/csspagina.jpg" alt="Imágen de CSS" class="w-full md:w-3/4 lg:w-1/2 mx-auto">
+            <h2 class="text-xl md:text-2xl font-semibold mt-10 mb-8">Ventajas</h2>
+            <p class="mt-8 mb-8">
                 Gracias al uso de CSS, puedes aplicar estilos a múltiples elementos simultáneamente, lo que permite lograr un diseño uniforme y atractivo 
                 en todas las páginas. <br>
                 Una <b>ventaja</b> que siempre resalto, es que CSS brinda la posibilidad de personalizar el aspecto de tu web, y mientras más lo hagamos, mejor 
@@ -52,188 +47,185 @@
                 para trabajar sobre el HTML ya escrito. <br>
                 Empecemos por observar la sintaxis de selector: 
             </p>
-            <img src="img/sintaxisjavascript.png" alt="Sintaxis de CSS" class="w-50 md:w-100 lg:w-150">
-            <p>
+            <img src="img/sintaxisjavascript.png" alt="Sintaxis de CSS" class="w-full md:w-3/4 lg:w-1/2 mx-auto">
+            <p class="mt-8 mb-8">
                 En la siguiente tabla, se muestran los selectores básicos con su respectiva descripción. Ten en cuenta los caracteres especiales que usan algunos.
             </p>
-            <br>
-            <table class="w-4/5 mx-auto border-collapse p-12">
-                <caption class="bg-teal-900 text-white rounded-t-md p-3"><b>Selectores básicos</b></caption>
-                <thead class="bg-teal-700 opacity-75 text-white">
-                    <tr>
-                        <th>Selector</th>
-                        <th>Descripción</th>
-                    </tr>
-                </thead>
-                <tbody class="text-center bg-gray-200 text-teal-900 border-b-2">
-                    <tr>
-                        <td>*</td>
-                        <td>Selecciona todos los elementos del DOM</td>
-                    </tr>
-                    <tr>
-                        <td>etiqueta</td>
-                        <td>Selecciona todas las etiquetas indicadas</td>
-                    </tr>
-                    <tr>
-                        <td>.class</td>
-                        <td>Selección de los elementos con las clase .class</td>
-                    </tr>
-                    <tr>
-                        <td>#id</td>
-                        <td>Selección del elemento con id #id</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br><br>
-            <p>
+            <div class="overflow-x-auto">
+                <table class="min-w-full border-collapse table-auto">
+                    <caption class="bg-teal-900 text-white rounded-t-md p-3"><b>Selectores básicos</b></caption>
+                    <thead class="bg-teal-700 opacity-75 text-white">
+                        <tr>
+                            <th class="p-4">Selector</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-gray-200 text-teal-900 divide-y divide-teal-300 border-b-2">
+                        <tr>
+                            <td class="p-4 align-top">*</td>
+                            <td class="p-4 align-top">Selecciona todos los elementos del DOM</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">etiqueta</td>
+                            <td class="p-4 align-top">Selecciona todas las etiquetas indicadas</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">.class</td>
+                            <td class="p-4 align-top">Selección de los elementos con las clase .class</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">#id</td>
+                            <td class="p-4 align-top">Selección del elemento con id #id</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-8 mb-8">
                 También, te mostramos las propiedades de colores y fondos; muy importantes para darle ese toque personalizado a tu sitio web.
             </p>
-            <br>
-            <table class="w-4/5 mx-auto border-collapse p-12">
-                <caption class="bg-teal-900 text-white rounded-t-md p-3"><b>Color y fondo</b></caption>
-                <thead class="bg-teal-700 opacity-75 text-white">
-                    <tr>
-                        <th>Propiedad</th>
-                        <th>Descripción</th>
-                        <th>Valores</th>
-                    </tr>
-                </thead>
-                <tbody class="text-center bg-gray-200 text-teal-900 border-b-2">
-                    <tr>
-                        <td>color</td>
-                        <td>Color del texto</td>
-                        <td>RGB | HSL | HEX | nombre del color | RGBA | HSLA</td>
-                    </tr>
-                    <tr>
-                        <td>background-color</td>
-                        <td>Color de fondo</td>
-                        <td>RGB | HSL | HEX | nombre del color | RGBA</td>
-                    </tr>
-                    <tr>
-                        <td>background-image</td>
-                        <td>Imagen de fondo</td>
-                        <td>url(...) | none</td>
-                    </tr>
-                    <tr>
-                        <td>background-size</td>
-                        <td>Tamaño de la imagen de fondo</td>
-                        <td>auto | cover | contain | valor</td>
-                    </tr>
-                    <tr>
-                        <td>background-position</td>
-                        <td>Posición de la imagen de fondo</td>
-                        <td>percentage | length | left | center | right</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br><br>
-            <p>
+            <div class="overflow-x-auto">
+                <table class="min-w-full border-collapse table-auto">
+                    <caption class="bg-teal-900 text-white rounded-t-md p-3"><b>Color y fondo</b></caption>
+                    <thead class="bg-teal-700 opacity-75 text-white">
+                        <tr>
+                            <th class="p-4">Propiedad</th>
+                            <th>Descripción</th>
+                            <th>Valores</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-gray-200 text-teal-900 divide-y divide-teal-300 border-b-2">
+                        <tr>
+                            <td class="p-4 align-top">color</td>
+                            <td class="p-4 align-top">Color del texto</td>
+                            <td class="p-4 align-top">RGB | HSL | HEX | nombre del color | RGBA | HSLA</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">background-color</td>
+                            <td class="p-4 align-top">Color de fondo</td>
+                            <td class="p-4 align-top">RGB | HSL | HEX | nombre del color | RGBA</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">background-image</td>
+                            <td class="p-4 align-top">Imagen de fondo</td>
+                            <td class="p-4 align-top">url(...) | none</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">background-size</td>
+                            <td class="p-4 align-top">Tamaño de la imagen de fondo</td>
+                            <td class="p-4 align-top">auto | cover | contain | valor</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">background-position</td>
+                            <td class="p-4 align-top">Posición de la imagen de fondo</td>
+                            <td class="p-4 align-top">percentage | length | left | center | right</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-8 mb-8">
                 De igual manera, en las dos tablas siguientes, te presentamos ciertas propiedades relacionadas con el texto y las fuentes, que te ayudarán a mejorar la legibilidad y el estilo de tu contenido.
             </p>
-            <br>
-            <table class="w-4/5 mx-auto border-collapse p-12">
-                <caption class="bg-teal-900 text-white rounded-t-md p-3"><b>Texto</b></caption>
-                <thead class="bg-teal-700 opacity-75 text-white">
-                    <tr>
-                        <th>Propiedad</th>
-                        <th>Descripción</th>
-                        <th>Valores</th>
-                    </tr>
-                </thead>
-                <tbody class="text-center bg-gray-200 text-teal-900 border-b-2">
-                    <tr>
-                        <td>text-indent</td>
-                        <td>Desplazamiento de la primera línea del texto</td>
-                        <td>longitud | porcentaje</td>
-                    </tr>
-                    <tr>
-                        <td>text-align</td>
-                        <td>Alineamiento del texto</td>
-                        <td>left | right | center | justify</td>
-                    </tr>
-                    <tr>
-                        <td>text-decoration</td>
-                        <td>Efectos de subrayado y tachado</td>
-                        <td>none | underline | overline | line-through</td>
-                    </tr>
-                    <tr>
-                        <td>text-transform</td>
-                        <td>Transformación a mayúsculas/minúsculas</td>
-                        <td>capitalize | uppercase | lowercase | none</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br><br>
-            <table class="w-4/5 mx-auto border-collapse p-12">
-                <caption class="bg-teal-900 text-white rounded-t-md p-3"><b>Fuentes</b></caption>
-                <thead class="bg-teal-700 opacity-75 text-white">
-                    <tr>
-                        <th>Propiedad</th>
-                        <th>Descripción</th>
-                        <th>Valores</th>
-                    </tr>   
-                </thead>
-                <tbody class="text-center bg-gray-200 text-teal-900 border-b-2">
-                    <tr>
-                        <td>font-family</td>
-                        <td>Familia de fuentes</td>
-                        <td>nombre-familia | nombre-familia-genérica | *</td>
-                    </tr>
-                    <tr>
-                        <td>font-weight</td>
-                        <td>Anchura de los caracteres. Normal = 400, Negrita = 700</td>
-                        <td>normal | bold | bolder | lighter | 100 | 200 | 300 | 400</td>
-                    </tr>
-                    <tr>
-                        <td>font-size</td>
-                        <td>Tamaño de la fuente</td>
-                        <td>xx-small | x-small | small | medium | large | x-large | xx-large</td>
-                </tbody>
-            </table>
-            <br><br>
-            <h2 class="text-2xl font-semibold mb-4">Aplicaciones</h2>
-            <br>
-            <p>
+            <div class="overflow-x-auto">
+                <table class="min-w-full border-collapse table-auto">
+                    <caption class="bg-teal-900 text-white rounded-t-md p-3"><b>Texto</b></caption>
+                    <thead class="bg-teal-700 opacity-75 text-white">
+                        <tr>
+                            <th class="p-4">Propiedad</th>
+                            <th>Descripción</th>
+                            <th>Valores</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-gray-200 text-teal-900 divide-y divide-teal-300 border-b-2">
+                        <tr>
+                            <td class="p-4 align-top">text-indent</td>
+                            <td class="p-4 align-top">Desplazamiento de la primera línea del texto</td>
+                            <td class="p-4 align-top">longitud | porcentaje</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">text-align</td>
+                            <td class="p-4 align-top">Alineamiento del texto</td>
+                            <td class="p-4 align-top">left | right | center | justify</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">text-decoration</td>
+                            <td class="p-4 align-top">Efectos de subrayado y tachado</td>
+                            <td class="p-4 align-top">none | underline | overline | line-through</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">text-transform</td>
+                            <td class="p-4 align-top">Transformación a mayúsculas/minúsculas</td>
+                            <td class="p-4 align-top">capitalize | uppercase | lowercase | none</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="overflow-x-auto mt-10">
+                <table class="min-w-full border-collapse table-auto">
+                    <caption class="bg-teal-900 text-white rounded-t-md p-3"><b>Fuentes</b></caption>
+                    <thead class="bg-teal-700 opacity-75 text-white">
+                        <tr>
+                            <th class="p-4">Propiedad</th>
+                            <th>Descripción</th>
+                            <th>Valores</th>
+                        </tr>   
+                    </thead>
+                    <tbody class="bg-gray-200 text-teal-900 divide-y divide-teal-300 border-b-2">
+                        <tr>
+                            <td class="p-4 align-top">font-family</td>
+                            <td class="p-4 align-top">Familia de fuentes</td>
+                            <td class="p-4 align-top">nombre-familia | nombre-familia-genérica | *</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">font-weight</td>
+                            <td class="p-4 align-top">Anchura de los caracteres. Normal = 400, Negrita = 700</td>
+                            <td class="p-4 align-top">normal | bold | bolder | lighter | 100 | 200 | 300 | 400</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">font-size</td>
+                            <td class="p-4 align-top">Tamaño de la fuente</td>
+                            <td class="p-4 align-top">xx-small | x-small | small | medium | large | x-large | xx-large</td>
+                    </tbody>
+                </table>
+            </div>
+            <h2 class="text-xl md:text-2xl font-semibold mt-10 mb-8">Aplicaciones</h2>
+            <p class="mt-8 mb-8">
                 A continuación, te comparto un ejemplo sencillo de CSS, usando algunas de las propiedades que hemos mencionado en esta sección. 
                 Puedes probar este código en tu editor de confianza para que observes los cambios visuales que se generan. ¡Fascinante!
             </p>
-            <br>
-            <img src="img/ejemplocss.png" alt="Ejemplo de código CSS" class="w-50 md:w-100 lg:w-150">
+            <img src="img/ejemplocss.png" alt="Ejemplo de código CSS" class="w-full md:w-3/4 lg:w-1/2 mx-auto">
         </section>
         <!--Contenido lateral para todas la páginas-->
-        <aside class="col-span-3 pt-28">
-            <p>Para la revisión específica, te invito a explorar las secciones dedicadas a cada uno de estos lenguajes esenciales:</p><br>
-            <a href="html.html">HTML: Estructura y contenido</a><br><br>
-            <a href="css.html">CSS: Diseño, estilo y presentación</a><br><br>
-            <a href="javascript.html">JavaScript: Interactividad y dinamismo</a><br><br>
-            <br>
+        <aside class="md:col-span-3 mt-10 md:mt-0 md:pt-28 m-5">
+            <p>Para la revisión específica, te invito a explorar las secciones dedicadas a cada uno de estos lenguajes esenciales:</p>
+            <nav class="flex flex-col space-y-2 mt-8">
+                <a href="html.html" class="text-teal-700 hover:text-teal-900 hover:underline">HTML: Estructura y contenido</a>
+                <a href="css.html" class="text-teal-700 hover:text-teal-900 hover:underline">CSS: Diseño, estilo y presentación</a>
+                <a href="javascript.html" class="text-teal-700 hover:text-teal-900 hover:underline">JavaScript: Interactividad y dinamismo</a>
+            </nav>
+            <p class="mt-8 mb-8">¡Síguenos en redes sociales para que no te pierdas las novedades!</p>
             <!--Importación de íconos de FontAwesome-->
-            <p>¡Síguenos en redes sociales para que no te pierdas las novedades!</p><br>
-            <i class="fa-brands fa-whatsapp fa-xl" style="color: #027779;"></i> <br><br>            
-            <i class="fa-brands fa-facebook fa-xl" style="color: #027779;"></i> <br><br>
-            <i class="fa-brands fa-instagram fa-xl" style="color: #027779;"></i> <br><br>
-            <i class="fa-brands fa-youtube fa-xl" style="color: #027779;"></i> <br><br>
-
+            <nav class="flex flex-row justify-around md:flex-col space-y-4">
+                <a href="" target="_blank"><i class="fa-brands fa-whatsapp fa-xl cursor-pointer" style="color: #027779;"></i></a>        
+                <a href="" target="_blank"><i class="fa-brands fa-facebook fa-xl cursor -pointer" style="color: #027779;"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-instagram fa-xl cursor-pointer" style="color: #027779;"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-youtube fa-xl cursor pointer" style="color: #027779;"></i></a>
+            </nav>
         </aside>
         <!--Contenido final para todas las páginas-->
-        <article class="col-span-12 mx-32 my-0 p-20 rounded-xl shadow-xl">
+        <article class="md:col-span-12 mx-4 md:mx-32 p-10 md:p-20 rounded-xl shadow-xl">
             <h2 class="text-2xl font-semibold mb-4">¿Cuál es la siguiente ruta?</h2>
-            <br>
-            <p>
+            <p class="mt-5 mb-5">
                 Ya entendimos los conceptos básicos de estos lenguajes esenciales del desarrollo web, lo ideal sería seguir con la ruta del aprendizaje, 
                 pues seguro estás aquí por ese motivo. O tal vez, ya te motivaste a continuar. <br>
                 El siguiente paso es entrar de lleno al estudio de HTML, CSS y JavaScript; si estás interesado, te invito a llenar el siguiente formulario 
-                de inscripción a nuestros cursos. <br>
+                de inscripción a nuestros cursos.
             </p>
-            <a href="formulario.html">Formulario de inscripción</a>
-            <p>
+            <a href="formulario.html" class="text-teal-700 hover:text-teal-900 hover:underline">Formulario de inscripción</a>
+            <p class="mt-5">
                 ¡Vamos a la siguiente ruta!
             </p>
         </article>
     </div>
-    <br>
-    <br>
-    <hr>
     <!--Footer para todas las páginas-->
     <footer class="bg-teal-950 text-white text-center p-8">
         <p>&copy; 2025 Britney's Blog</p>

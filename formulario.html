@@ -8,15 +8,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="libreriaFontAwesome/css/all.css">
 </head>
-<body class="font-sans bg-gray-200 text-neutral-800 leading-relaxed">
+<body class="font-sans bg-gray-100 text-neutral-800 leading-relaxed">
     <!--Encabezado con logo y título para todas las páginas-->
-    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex justify-center gap-4">
+    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex flex-col md:flex-row items-center justify-center gap-4">
         <img src="img/logopagina.png" alt="Logo de desarrollo web" class="w-15">
         <span><strong>Introducción a los lenguajes del desarrollo web</strong></span>
     </header>
     <!--Menú de navegación para todas las páginas-->
-    <nav class="bg-teal-900 text-white flex justify-center p-4">
-        <ul class="flex flex-row gap-16 list-none no-underline">
+    <nav class="bg-teal-900 text-white p-4">
+        <ul class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-16 list-none no-underline">
             <li><a class="hover:underline hover:font-bold" href="index.html">Inicio</a></li>
             <li><a class="hover:underline hover:font-bold" href="html.html">HTML</a></li>
             <li><a class="hover:underline hover:font-bold" href="css.html">CSS</a></li>
@@ -24,39 +24,31 @@
             <li><a class="hover:underline hover:font-bold" href="formulario.html">Formulario de inscripción</a></li>
         </ul>
     </nav>
-    <hr>
     <!--Contenido principal de la página-->
-    <main class="formulario">
-        <h1>Formulario de inscripción a nuestros cursos</h1>
-        <p>Por favor, complete los siguientes campos requeridos para registrar su inscripción:</p>
-        <br><br>
-        <form action="registro.html" method="post">
-            <label for="nombre">Nombres:</label>
-            <input type="text" id="nombre" required>
-            <br><br>
+    <main class="p-5 md:p-20">
+        <h1 class="text-2xl md:text-4xl text-center font-bold mb-10">Formulario de inscripción a nuestros cursos</h1>
+        <p class="text-center">Por favor, complete los siguientes campos requeridos para registrar su inscripción:</p>
+        <form action="registro.html" method="post" class="max-w-xl mx-auto mt-15 mb-24 p-10 md-p-20 bg-gray-100 rounded-xl shadow-xl">
+            <label for="nombre" class="block mb-2 text-teal-800 font-medium">Nombres:</label>
+            <input type="text" id="nombre" required class="w-full p-3 mb-5 border-2 border-teal-600 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-teal-600">
 
-            <label for="apellido">Apellidos:</label>
-            <input type="text" id="apellido" required>
-            <br><br>
+            <label for="apellido" class="block mb-2 text-teal-800 font-medium">Apellidos:</label>
+            <input type="text" id="apellido" required class="w-full p-3 mb-5 border-2 border-teal-600 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-teal-600">
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" required>
-            <br><br>
+            <label for="email" class="block mb-2 text-teal-800 font-medium">Correo electrónico:</label>
+            <input type="email" id="email" required class="w-full p-3 mb-5 border-2 border-teal-600 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-teal-600">
 
-            <label for="curso">Curso de interés:</label>
-            <select id="curso" required>
+            <label for="curso" class="block mb-2 text-teal-800 font-medium">Curso de interés:</label>
+            <select id="curso" required class="w-full p-3 mb-5 border-2 border-teal-600 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-teal-600">
                 <option value="" disabled selected>Seleccione una opción</option>
                 <option value="html">HTML</option>
                 <option value="css">CSS</option>
                 <option value="javascript">JavaScript</option>
-            </select><br><br><br>
+            </select>
 
-            <button type="submit" class="bg-sky-500 hover:bg-sky-700">Enviar</button>
+            <button type="submit" class="w-full p-3 mt-10 bg-teal-900 text-white rounded-md text-base hover:shadow-lg hover:font-bold transition cursor-pointer">Enviar</button>
         </form>
     </main>
-    <br>
-    <br>
-    <hr>
     <!--Footer para todas las páginas-->
     <footer class="bg-teal-950 text-white text-center p-8">
         <p>&copy; 2025 Britney's Blog</p>

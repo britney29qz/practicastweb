@@ -8,15 +8,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="libreriaFontAwesome/css/all.css">
 </head>
-<body class="font-sans bg-gray-200 text-neutral-800 leading-relaxed">
+<body class="font-sans bg-gray-100 text-neutral-800 leading-relaxed">
     <!--Encabezado con logo y título para todas las páginas-->
-    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex justify-center gap-4">
+    <header class="bg-teal-950 text-white p-7 text-center text-3xl md:text-4xl flex flex-col md:flex-row items-center justify-center gap-4">
         <img src="img/logopagina.png" alt="Logo de desarrollo web" class="w-15">
         <span><strong>Introducción a los lenguajes del desarrollo web</strong></span>
     </header>
     <!--Menú de navegación para todas las páginas-->
-    <nav class="bg-teal-900 text-white flex justify-center p-4">
-        <ul class="flex flex-row gap-16 list-none no-underline">
+    <nav class="bg-teal-900 text-white p-4">
+        <ul class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-16 list-none no-underline">
             <li><a class="hover:underline hover:font-bold" href="index.html">Inicio</a></li>
             <li><a class="hover:underline hover:font-bold" href="html.html">HTML</a></li>
             <li><a class="hover:underline hover:font-bold" href="css.html">CSS</a></li>
@@ -24,13 +24,11 @@
             <li><a class="hover:underline hover:font-bold" href="formulario.html">Formulario de inscripción</a></li>
         </ul>
     </nav>
-    <hr>    
-    <div class="grid grid-cols-12 gap-8 p-20">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8 p-5 md:p-20">
         <!--Contenido principal de la página-->
-        <section class="col-span-9 p-12 border-r-2 border-teal-800">
-            <h1 class="col-span-12 text-3xl md:text-4xl font-bold text-center mb-8">JavaScript: Interactividad y dinamismo</h1>
-            <br>
-            <p>
+        <section class="md:col-span-9 p-5 md:p-12 md:border-r-2 border-teal-800">
+            <h1 class="text-2xl md:text-4xl font-bold text-center mb-10">JavaScript: Interactividad y dinamismo</h1>
+            <p class="mb-8">
                 JavaScript se trata de un lenguaje de programación con el que puedes agregar <em>interactividad y dinamismo</em> a tu 
                 página web. Trabaja sobre el código que ya has escrito con HTML y CSS, por lo que se complementan en el desarrollo 
                 de tu proyecto. <br>
@@ -39,12 +37,9 @@
                 Algo importante a tener en cuenta es que este lenguaje se puede utilizar tanto en el lado del cliente como en el lado del servidor, 
                 utilizando tecnologías necesarias para ello, como Node.js.
             </p>
-            <br>
-            <img src="img/javascriptpagina.png" alt="Imágen de JavaScript" class="w-50 md:w-100 lg:w-150">
-            <br><br>            
-            <h2 class="text-2xl font-semibold mb-4">Ventajas</h2>
-            <br>
-            <p>
+            <img src="img/javascriptpagina.png" alt="Imágen de JavaScript" class="w-full md:w-3/4 lg:w-1/2 mx-auto">
+            <h2 class="text-xl md:text-2xl font-semibold mt-10 mb-8">Ventajas</h2>
+            <p class="mt-8 mb-8">
                 Ya tenemos la noción de las <b>ventajas</b> que brinda este lenguaje, recordemos que agrega movimiento a las páginas web, además de permitir el 
                 procesamiento y transformación de los datos enviados y recibidos. <br>
                 Junto con la creación de contenidos que se actualizan de forma dinámica y animada, dando vida a las aplicaciones que antes 
@@ -53,136 +48,124 @@
                 Quiero mostrarte algunos conceptos básicos e importantes para que te lleves un poquito más de conocimiento técnico. Con esto, te dará una idea de las enormes 
                 ventajas que tiene el uso de JavaScript en el desarrollo web.
             </p>
-            <br>
-            <h3 class="text-xl font-semibold mb-4">Variables</h3>
-            <br>
-            <p>
+            <h3 class="md:text-xl font-semibold mb-4">Variables</h3>
+            <p class="mb-8">
                 Las variables son contenedores en los que puedes almacenar valores. Primero se declara la variable con la palabra reservada 
-                <em>var</em> o <em>let</em>, seguida del nombre que se le vaya a dar. <br><br>
+                <em>var</em> o <em>let</em>, seguida del nombre que se le vaya a dar.
             </p>
-            <p class="cod1">let nombreDeLaVariable = "Bob";</p><br>
-            <p>Existen diferentes tipos de datos que puedes almacenar en las variables, como números, cadenas de texto, booleanos, arreglos y objetos.</p>
-            <br>
-            <h3 class="text-xl font-semibold mb-4">Operadores</h3>
-            <br>
-            <p>
+            <p class="mt-8 mb-8 ml-5">let nombreDeLaVariable = "Bob";</p>
+            <p class="mb-8">Existen diferentes tipos de datos que puedes almacenar en las variables, como números, cadenas de texto, booleanos, arreglos y objetos.</p>
+            <h3 class="md:text-xl font-semibold mb-4">Operadores</h3>
+            <p class="mb-8">
                 Un operador es un símbolo matemático que puede actuar sobre dos valores o variable y producir un resultado. <br>
                 En la siguiente tabla, se muestran algunos de los operadores más comunes en JavaScript: <br>
             </p>
-            <br>
-            <table class="w-4/5 mx-auto border-collapse p-12">
-                <caption class="bg-teal-900 text-white rounded-t-md p-3"><b>Operadores comunes</b></caption>
-                <thead class="bg-teal-700 opacity-75 text-white">
-                    <tr>
-                        <th>Operador</th>
-                        <th>Descripción</th>
-                        <th>Ejemplo</th>
-                    </tr>
-                </thead>
-                <tbody class="text-center bg-gray-200 text-teal-900 border-b-2">
-                    <tr>
-                        <td>Suma/concatenar (+)</td>
-                        <td>Suma dos números o junta dos cadenas en una</td>
-                        <td class="codtabla">6 + 9;<br>"Hola " + "mundo!";</td>
-                    </tr>
-                    <tr>
-                        <td>Resta (-), multiplicación (*), división (/)</td>
-                        <td>Operaciones básicas matemáticas</td>
-                        <td class="codtabla">9 - 3;<br>8 * 2;<br>9 / 3;</td>
-                    </tr>
-                    <tr>
-                        <td>Asignación (=)</td>
-                        <td>Asigna un valor a una variable</td>
-                        <td class="codtabla">let miVariable = 'Bob';</td>
-                    </tr>
-                    <tr>
-                        <td>Identidad/igualdad (===)</td>
-                        <td>Comprueba si dos valores son iguales entre sí, y devuelve valor de true/false</td>
-                        <td class="codtabla">let miVariable = 3;<br>miVariable === 4;</td>
-                    </tr>
-                    <tr>
-                        <td>Negación, distinto (!, !==)</td>
-                        <td>Equivale al operador lógico NOT, cambia true por false y viceversa</td>
-                        <td class="codtabla">let miVariable = 3;<br>miVariable !== 3;</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <h3 class="text-xl font-semibold mb-4">Condicionales</h3>
-            <br>
-            <p>
+            <div class="overflow-x-auto mt-10">
+                <table class="min-w-full border-collapse table-auto">
+                    <caption class="bg-teal-900 text-white rounded-t-md p-3"><b>Operadores comunes</b></caption>
+                    <thead class="bg-teal-700 opacity-75 text-white">
+                        <tr>
+                            <th class="p-4">Operador</th>
+                            <th>Descripción</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-gray-200 text-teal-900 divide-y divide-teal-300 border-b-2">
+                        <tr>
+                            <td class="p-4 align-top">Suma/concatenar (+)</td>
+                            <td class="p-4 align-top">Suma dos números o junta dos cadenas en una</td>
+                            <td class="p-4 align-top">6 + 9;<br>"Hola " + "mundo!";</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">Resta (-), multiplicación (*), división (/)</td>
+                            <td class="p-4 align-top">Operaciones básicas matemáticas</td>
+                            <td class="p-4 align-top">9 - 3;<br>8 * 2;<br>9 / 3;</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">Asignación (=)</td>
+                            <td class="p-4 align-top">Asigna un valor a una variable</td>
+                            <td class="p-4 align-top">let miVariable = 'Bob';</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">Identidad/igualdad (===)</td>
+                            <td class="p-4 align-top">Comprueba si dos valores son iguales entre sí, y devuelve valor de true/false</td>
+                            <td class="p-4 align-top">let miVariable = 3;<br>miVariable === 4;</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top">Negación, distinto (!, !==)</td>
+                            <td class="p-4 align-top">Equivale al operador lógico NOT, cambia true por false y viceversa</td>
+                            <td class="p-4 align-top">let miVariable = 3;<br>miVariable !== 3;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 class="md:text-xl font-semibold mt-8 mb-4">Condicionales</h3>
+            <p class="mb-8">
                 Los condicionales son estructuras de código que permiten comprobar si una expresión devuelve true o no, 
                 y luego ejecuta un código diferente dependiendo del resultado. <br>
-                El condicional más comúnn es la llamada if... else. Observemos: <br><br>
+                El condicional más comúnn es la llamada if... else. Observemos: 
             </p>
-                <p class="cod1">let helado = "chocolate";</p><br>
-                <p class="cod1">if (helado === "chocolate") {</p>
-                <p class="cod2">alert("¡Sí, amo el helado de chocolate!");</p>
-                <p class="cod1">} else {</p>
-                <p class="cod2">alert("Awwww, pero mi favorito es el de chocolate...");</p>
-                <p class="cod1">}</p><br>
-                <p>Si se cumple el if, se ejecuta el primer apartado, y si no se cumple la primera condición, se ejecuta el bloque dentro del else.</p>
-            <br>
-            <h3 class="text-xl font-semibold mb-4">Funciones</h3>
-            <br>
-            <p>
+                <p class="ml-5">let helado = "chocolate";</p>
+                <p class="ml-5">if (helado === "chocolate") {</p>
+                <p class="ml-10">alert("¡Sí, amo el helado de chocolate!");</p>
+                <p class="ml-5">} else {</p>
+                <p class="ml-10">alert("Awwww, pero mi favorito es el de chocolate...");</p>
+                <p class="ml-5">}</p>
+                <p class="mt-8 mb-8">Si se cumple el if, se ejecuta el primer apartado, y si no se cumple la primera condición, se ejecuta el bloque dentro del else.</p>
+            <h3 class="md:text-xl font-semibold mb-4">Funciones</h3>
+            <p class="mb-8">
                 Las funciones son una manera de encapsular una funcionalidad que quieres reutilizar, de modo que puedes llamar 
                 esa función con un solo nombre. Por ejemplo: 
-            </p><br>
-            <p class="cod1">let nombreDeLaVariable = document.querySelector("h1");</p>
-            <p class="cod1">alert("¡Hola!");</p><br>
-            <p>    
+            </p>
+            <p class="ml-5">let nombreDeLaVariable = document.querySelector("h1");</p>
+            <p class="ml-5">alert("¡Hola!");</p>
+            <p class="mt-8 mb-8">    
                 Estas funciones: document.querySelector y alert, están integradas en el navegador para poder usarlas en cualquier momento. <br>
                 Si ves algo que parece un nombre de variable seguido de un paréntesis al final, lo más probable es que sea una función. Recuerda 
                 que las funciones toman con frecuencia <em>argumentos</em>, pedazos de datos que necesitan para hacer su trabajo; estos se colocan 
                 dentro de los paréntesis.
             </p>
-            <br>
-            <h2 class="text-2xl font-semibold mb-4">Aplicaciones</h2>
-            <br>
-            <p>
+            <h2 class="text-xl md:text-2xl font-semibold mt-10 mb-8">Aplicaciones</h2>
+            <p class="mb-8"> 
                 A continuación, te muestro un ejemplo sencillo de código JavaScript integrado en el HTML; te ayudará a entender la forma que tiene al complementarse. <br>
                 La verdad es que para este lenguaje sí debemos tomar en cuenta más detalles, pues ya es más complejo; pero descuida, que con una guía paso a paso, y la práctica, 
                 ¡todo se puede! <br> 
                 Recuerda probar el código en un editor que permita integrar los scripts de JavaScript. ¡Diviértete! 
             </p>
-            <br>
-            <img src="img/ejemplojavascript.png" alt="Ejemplo de código JavaScript" class="w-50 md:w-100 lg:w-150"> 
+            <img src="img/ejemplojavascript.png" alt="Ejemplo de código JavaScript" class="w-full md:w-3/4 lg:w-1/2 mx-auto"> 
         </section>
         <!--Contenido lateral para todas la páginas-->
-        <aside class="col-span-3 pt-28">
-            <p>Para la revisión específica, te invito a explorar las secciones dedicadas a cada uno de estos lenguajes esenciales:</p><br>
-            <a href="html.html">HTML: Estructura y contenido</a><br><br>
-            <a href="css.html">CSS: Diseño, estilo y presentación</a><br><br>
-            <a href="javascript.html">JavaScript: Interactividad y dinamismo</a><br><br>
-            <br>
+        <aside class="md:col-span-3 mt-10 md:mt-0 md:pt-28 m-5">
+            <p>Para la revisión específica, te invito a explorar las secciones dedicadas a cada uno de estos lenguajes esenciales:</p>
+            <nav class="flex flex-col space-y-2 mt-8">
+                <a href="html.html" class="text-teal-700 hover:text-teal-900 hover:underline">HTML: Estructura y contenido</a>
+                <a href="css.html" class="text-teal-700 hover:text-teal-900 hover:underline">CSS: Diseño, estilo y presentación</a>
+                <a href="javascript.html" class="text-teal-700 hover:text-teal-900 hover:underline">JavaScript: Interactividad y dinamismo</a>
+            </nav>
+            <p class="mt-8 mb-8">¡Síguenos en redes sociales para que no te pierdas las novedades!</p>
             <!--Importación de íconos de FontAwesome-->
-            <p>¡Síguenos en redes sociales para que no te pierdas las novedades!</p><br>
-            <i class="fa-brands fa-whatsapp fa-xl" style="color: #027779;"></i> <br><br>            
-            <i class="fa-brands fa-facebook fa-xl" style="color: #027779;"></i> <br><br>
-            <i class="fa-brands fa-instagram fa-xl" style="color: #027779;"></i> <br><br>
-            <i class="fa-brands fa-youtube fa-xl" style="color: #027779;"></i> <br><br>
-
+            <nav class="flex flex-row justify-around md:flex-col space-y-4">
+                <a href="" target="_blank"><i class="fa-brands fa-whatsapp fa-xl cursor-pointer" style="color: #027779;"></i></a>        
+                <a href="" target="_blank"><i class="fa-brands fa-facebook fa-xl cursor -pointer" style="color: #027779;"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-instagram fa-xl cursor-pointer" style="color: #027779;"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-youtube fa-xl cursor pointer" style="color: #027779;"></i></a>
+            </nav>
         </aside>
         <!--Contenido final para todas las páginas-->
-        <article class="col-span-12 mx-32 my-0 p-20 rounded-xl shadow-xl">
+        <article class="md:col-span-12 mx-4 md:mx-32 p-10 md:p-20 rounded-xl shadow-xl">
             <h2 class="text-2xl font-semibold mb-4">¿Cuál es la siguiente ruta?</h2>
-            <br>
-            <p>
+            <p class="mt-5 mb-5">
                 Ya entendimos los conceptos básicos de estos lenguajes esenciales del desarrollo web, lo ideal sería seguir con la ruta del aprendizaje, 
                 pues seguro estás aquí por ese motivo. O tal vez, ya te motivaste a continuar. <br>
                 El siguiente paso es entrar de lleno al estudio de HTML, CSS y JavaScript; si estás interesado, te invito a llenar el siguiente formulario 
-                de inscripción a nuestros cursos. <br>
+                de inscripción a nuestros cursos.
             </p>
-            <a href="formulario.html">Formulario de inscripción</a>
-            <p>
+            <a href="formulario.html" class="text-teal-700 hover:text-teal-900 hover:underline">Formulario de inscripción</a>
+            <p class="mt-5">
                 ¡Vamos a la siguiente ruta!
             </p>
         </article>
     </div>
-    <br>
-    <br>
-    <hr>
     <!--Footer para todas las páginas-->
     <footer class="bg-teal-950 text-white text-center p-8">
         <p>&copy; 2025 Britney's Blog</p>
