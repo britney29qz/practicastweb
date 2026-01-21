@@ -8,7 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="libreriaFontAwesome/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap">
-
 </head>
 <body class="font-sans bg-gray-100 text-neutral-800 leading-relaxed">
     <!--Encabezado con logo y título para todas las páginas-->
@@ -18,18 +17,33 @@
     </header>
     <!--Menú de navegación para todas las páginas-->
     <nav class="bg-teal-900 text-white p-4">
-        <ul class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-16 list-none no-underline">
+        <!--Botón hamburguesa para móvil-->
+        <button id="botonMovil" class="md:hidden flex items-center utline-none cursor-pointer" aria-label="Abrir menú">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+        <!--Menú para desktop-->
+        <ul class="hidden md:flex items-center justify-center gap-16 list-none no-underline">
             <li><a class="hover:underline hover:font-bold" href="index.html">Inicio</a></li>
             <li><a class="hover:underline hover:font-bold" href="html.html">HTML</a></li>
             <li><a class="hover:underline hover:font-bold" href="css.html">CSS</a></li>
             <li><a class="hover:underline hover:font-bold" href="javascript.html">JavaScript</a></li>
             <li><a class="hover:underline hover:font-bold" href="formulario.html">Formulario de inscripción</a></li>
         </ul>
+        <!--Menú para móvil-->
+        <ul id="menuMovil" class="hidden flex-col items-center justify-center gap-4 list-none no-underline">
+            <li><a class="block hover:underline hover:font-bold" href="index.html">Inicio</a></li>
+            <li><a class="block hover:underline hover:font-bold" href="html.html">HTML</a></li>
+            <li><a class="block hover:underline hover:font-bold" href="css.html">CSS</a></li>
+            <li><a class="block hover:underline hover:font-bold" href="javascript.html">JavaScript</a></li>
+            <li><a class="block hover:underline hover:font-bold" href="formulario.html">Formulario de inscripción</a></li>
+        </ul>
     </nav>
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8 p-5 md:p-20">
-        <h1 class="md:col-span-12 text-2xl md:text-4xl font-bold text-center mt-5 mb-5">Introducción a los lenguajes del desarrollo web: HTML, CSS y JavaScript</h1>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-8 p-5 lg:p-20">
+        <h1 class="lg:col-span-12 text-2xl md:text-4xl font-bold text-center mt-5 mb-5">Introducción a los lenguajes del desarrollo web: HTML, CSS y JavaScript</h1>
         <!--Contenido principal de la página-->
-        <section class="md:col-span-9 p-5 md:p-12 md:border-r-2 border-teal-800">
+        <section class="lg:col-span-9 p-5 lg:p-12 lg:border-r-2 border-teal-800">
             <h2 class="text-xl md:text-2xl font-semibold mb-10">¿Cuáles son los lenguajes del desarrollo? Vistazo general</h2>
             <p class="mb-8">
                 En el inmenso mundo del desarrollo web, el pilar de toda construcción es y seguirá siendo: el lenguaje HTML. 
@@ -86,7 +100,7 @@
             </div>
         </section>
         <!--Contenido lateral para todas la páginas-->
-        <aside class="md:col-span-3 mt-10 md:mt-0 md:pt-28 m-5">
+        <aside class="lg:col-span-3 mt-10 md:mt-0 lg:pt-28 m-5">
             <p>Para la revisión específica, te invito a explorar las secciones dedicadas a cada uno de estos lenguajes esenciales:</p>
             <nav class="flex flex-col space-y-2 mt-8">
                 <a href="html.html" class="text-teal-700 hover:text-teal-900 hover:underline">HTML: Estructura y contenido</a>
@@ -95,7 +109,7 @@
             </nav>
             <p class="mt-8 mb-8">¡Síguenos en redes sociales para que no te pierdas las novedades!</p>
             <!--Importación de íconos de FontAwesome-->
-            <nav class="flex flex-row justify-around md:flex-col space-y-4">
+            <nav class="flex flex-row justify-around lg:flex-col space-y-4">
                 <a href="" target="_blank"><i class="fa-brands fa-whatsapp fa-xl cursor-pointer" style="color: #027779;"></i></a>        
                 <a href="" target="_blank"><i class="fa-brands fa-facebook fa-xl cursor -pointer" style="color: #027779;"></i></a>
                 <a href="" target="_blank"><i class="fa-brands fa-instagram fa-xl cursor-pointer" style="color: #027779;"></i></a>
@@ -103,8 +117,8 @@
             </nav>
         </aside>
         <!--Contenido final para todas las páginas-->
-        <article class="md:col-span-12 mx-4 md:mx-32 p-10 md:p-20 rounded-xl shadow-xl">
-            <h2 class="text-2xl font-semibold mb-4">¿Cuál es la siguiente ruta?</h2>
+        <article class="lg:col-span-12 mx-4 md:mx-32 p-10 md:p-20 rounded-xl shadow-xl">
+            <h2 class="text-xl md:text-2xl font-semibold mb-4">¿Cuál es la siguiente ruta?</h2>
             <p class="mt-5 mb-5">
                 Ya entendimos los conceptos básicos de estos lenguajes esenciales del desarrollo web, lo ideal sería seguir con la ruta del aprendizaje, 
                 pues seguro estás aquí por ese motivo. O tal vez, ya te motivaste a continuar. <br>
@@ -119,7 +133,16 @@
     </div>
     <!--Footer para todas las páginas-->
     <footer class="bg-teal-950 text-white text-center p-8">
-        <p>&copy; 2025 Britney's Blog</p>
+        <p>&copy; 2026 Britney's Blog</p>
     </footer>
+    <!--Script para el menú móvil-->
+    <script>
+        const boton = document.getElementById("botonMovil");
+        const menu = document.getElementById("menuMovil");
+
+        boton.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
